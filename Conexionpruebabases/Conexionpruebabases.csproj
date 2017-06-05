@@ -74,6 +74,12 @@
     <Compile Include="Vistas\borrarContador.Designer.cs">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\borrarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\borrarProveedor.Designer.cs">
+      <DependentUpon>borrarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\editCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="Vistas\insertProducto.Designer.cs">
       <DependentUpon>insertProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\insertProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\insertProveedor.Designer.cs">
+      <DependentUpon>insertProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\porcProdVendProvee.cs">
       <SubType>Form</SubType>
@@ -122,6 +134,9 @@
     <EmbeddedResource Include="Vistas\borrarContador.resx">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\borrarProveedor.resx">
+      <DependentUpon>borrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\editCliente.resx">
       <DependentUpon>editCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\insertProducto.resx">
       <DependentUpon>insertProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\insertProveedor.resx">
+      <DependentUpon>insertProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\porcProdVendProvee.resx">
       <DependentUpon>porcProdVendProvee.cs</DependentUpon>

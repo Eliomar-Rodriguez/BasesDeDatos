@@ -105,5 +105,15 @@ namespace Conexionpruebabases
         {
             new porcProdVendProvee().Show();
         }
+
+        private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertProveedor().Show();
+        }
+
+        private void proveedorToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new borrarProveedor().Show();
+        }
     }
 }

@@ -33,3 +33,23 @@ C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.BorrarCliente.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarContador.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.porcProdVendProvee.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\bin\Debug\Conexionpruebabases.exe.config
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.exe
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.pdb
+A:\TEC\Bases\Respaldo\Conexionpruebabases\bin\Debug\Conexionpruebabases.exe
+A:\TEC\Bases\Respaldo\Conexionpruebabases\bin\Debug\Conexionpruebabases.pdb
+A:\TEC\Bases\Respaldo\Conexionpruebabases\bin\Debug\Npgsql.pdb
+A:\TEC\Bases\Respaldo\Conexionpruebabases\bin\Debug\Npgsql.xml
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.csprojResolveAssemblyReference.cache
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Principal.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Properties.Resources.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarCliente.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarContador.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.editCliente.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.editProducto.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertCliente.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertProducto.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertProveedor.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.porcProdVendProvee.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.csproj.GenerateResource.Cache
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarProveedor.resources
