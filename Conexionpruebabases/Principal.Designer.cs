@@ -209,7 +209,7 @@
             // 
             this.modificarClienteToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarClienteToolStripMenuItem.Name = "modificarClienteToolStripMenuItem";
-            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.modificarClienteToolStripMenuItem.Text = "Cliente";
             this.modificarClienteToolStripMenuItem.Click += new System.EventHandler(this.modificarClienteToolStripMenuItem_Click);
             // 
@@ -217,7 +217,7 @@
             // 
             this.modificarContadorToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarContadorToolStripMenuItem.Name = "modificarContadorToolStripMenuItem";
-            this.modificarContadorToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.modificarContadorToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.modificarContadorToolStripMenuItem.Text = "Producto";
             this.modificarContadorToolStripMenuItem.Click += new System.EventHandler(this.modificarContadorToolStripMenuItem_Click);
             // 
@@ -225,22 +225,23 @@
             // 
             this.compraToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compraToolStripMenuItem.Name = "compraToolStripMenuItem";
-            this.compraToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.compraToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.compraToolStripMenuItem.Text = "Compra";
             // 
             // contadorToolStripMenuItem1
             // 
             this.contadorToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contadorToolStripMenuItem1.Name = "contadorToolStripMenuItem1";
-            this.contadorToolStripMenuItem1.Size = new System.Drawing.Size(146, 24);
+            this.contadorToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
             this.contadorToolStripMenuItem1.Text = "Contador";
             // 
             // proveedorToolStripMenuItem1
             // 
             this.proveedorToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proveedorToolStripMenuItem1.Name = "proveedorToolStripMenuItem1";
-            this.proveedorToolStripMenuItem1.Size = new System.Drawing.Size(146, 24);
+            this.proveedorToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
             this.proveedorToolStripMenuItem1.Text = "Proveedor";
+            this.proveedorToolStripMenuItem1.Click += new System.EventHandler(this.proveedorToolStripMenuItem1_Click);
             // 
             // borrarToolStripMenuItem
             // 
@@ -259,7 +260,7 @@
             // 
             this.clienteToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
@@ -267,21 +268,21 @@
             // 
             this.productoToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.productoToolStripMenuItem.Text = "Producto";
             // 
             // compraToolStripMenuItem1
             // 
             this.compraToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compraToolStripMenuItem1.Name = "compraToolStripMenuItem1";
-            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(146, 24);
             this.compraToolStripMenuItem1.Text = "Compra";
             // 
             // contadorToolStripMenuItem2
             // 
             this.contadorToolStripMenuItem2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contadorToolStripMenuItem2.Name = "contadorToolStripMenuItem2";
-            this.contadorToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
+            this.contadorToolStripMenuItem2.Size = new System.Drawing.Size(146, 24);
             this.contadorToolStripMenuItem2.Text = "Contador";
             this.contadorToolStripMenuItem2.Click += new System.EventHandler(this.contadorToolStripMenuItem2_Click);
             // 
@@ -289,7 +290,7 @@
             // 
             this.proveedorToolStripMenuItem2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proveedorToolStripMenuItem2.Name = "proveedorToolStripMenuItem2";
-            this.proveedorToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
+            this.proveedorToolStripMenuItem2.Size = new System.Drawing.Size(146, 24);
             this.proveedorToolStripMenuItem2.Text = "Proveedor";
             this.proveedorToolStripMenuItem2.Click += new System.EventHandler(this.proveedorToolStripMenuItem2_Click);
             // 

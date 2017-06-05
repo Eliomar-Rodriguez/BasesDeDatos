@@ -53,3 +53,4 @@ A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.i
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.porcProdVendProvee.resources
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.csproj.GenerateResource.Cache
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarProveedor.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.editProveedor.resources

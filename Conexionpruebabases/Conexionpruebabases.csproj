@@ -92,6 +92,12 @@
     <Compile Include="Vistas\editProducto.Designer.cs">
       <DependentUpon>editProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\editProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\editProveedor.Designer.cs">
+      <DependentUpon>editProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\insertCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\editProducto.resx">
       <DependentUpon>editProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\editProveedor.resx">
+      <DependentUpon>editProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\insertCliente.resx">
       <DependentUpon>insertCliente.cs</DependentUpon>

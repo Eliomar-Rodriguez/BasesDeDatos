@@ -115,5 +115,10 @@ namespace Conexionpruebabases
         {
             new borrarProveedor().Show();
         }
+
+        private void proveedorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new editProveedor().Show();
+        }
     }
 }
