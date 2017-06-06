@@ -109,7 +109,7 @@ namespace Conexionpruebabases
             new porcProdVendProvee().Show();
         }
 
-<<<<<<< HEAD
+
         private void insertarVentaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertCompra().Show();
@@ -126,7 +126,7 @@ namespace Conexionpruebabases
         private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new verCliente().Show();
-=======
+        }
         private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertProveedor().Show();
@@ -185,7 +185,6 @@ namespace Conexionpruebabases
         private void clienteRifaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertClienteRifa().Show();
->>>>>>> b2fefb8af8606523143fece6df0b26080dc929c1
         }
     }
 }
