@@ -67,8 +67,7 @@ namespace Conexionpruebabases.Vistas
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             // si hay espacios vacios
-            int n;
-            if (txtCedulaJuridica.Text.Length ==0 | txtNombreEmpresa.Text.Length == 0 | txtValoracion.Text.Length == 0 | txtNombre.Text.Length == 0 | txtApellido1.Text.Length == 0 | txtApellido2.Text.Length == 0 | cbDistritos.SelectedIndex == -1 | txtDirExacta.Text.Length == 0 | int.TryParse(txtValoracion.Text, out n))
+            if (txtCedulaJuridica.Text.Length ==0 | txtNombreEmpresa.Text.Length == 0 | txtValoracion.Text.Length == 0 | txtNombre.Text.Length == 0 | txtApellido1.Text.Length == 0 | txtApellido2.Text.Length == 0 | cbDistritos.SelectedIndex == -1 | txtDirExacta.Text.Length == 0 )
             {
                 lblError.Visible = true;
             }

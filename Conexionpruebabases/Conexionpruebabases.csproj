@@ -62,64 +62,64 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\borrarCliente.cs">
+    <Compile Include="Vistas\Clientes\borrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\borrarCliente.Designer.cs">
+    <Compile Include="Vistas\Clientes\borrarCliente.Designer.cs">
       <DependentUpon>borrarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\borrarContador.cs">
+    <Compile Include="Vistas\Contadores\borrarContador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\borrarContador.Designer.cs">
+    <Compile Include="Vistas\Contadores\borrarContador.Designer.cs">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\borrarProveedor.cs">
+    <Compile Include="Vistas\Proveedores\borrarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\borrarProveedor.Designer.cs">
+    <Compile Include="Vistas\Proveedores\borrarProveedor.Designer.cs">
       <DependentUpon>borrarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\editCliente.cs">
+    <Compile Include="Vistas\Clientes\editCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\editCliente.Designer.cs">
+    <Compile Include="Vistas\Clientes\editCliente.Designer.cs">
       <DependentUpon>editCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\editProducto.cs">
+    <Compile Include="Vistas\Productos\editProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\editProducto.Designer.cs">
+    <Compile Include="Vistas\Productos\editProducto.Designer.cs">
       <DependentUpon>editProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\editProveedor.cs">
+    <Compile Include="Vistas\Proveedores\editProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\editProveedor.Designer.cs">
+    <Compile Include="Vistas\Proveedores\editProveedor.Designer.cs">
       <DependentUpon>editProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\insertCliente.cs">
+    <Compile Include="Vistas\Clientes\insertCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\insertCliente.Designer.cs">
+    <Compile Include="Vistas\Clientes\insertCliente.Designer.cs">
       <DependentUpon>insertCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\insertProducto.cs">
+    <Compile Include="Vistas\Productos\insertProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\insertProducto.Designer.cs">
+    <Compile Include="Vistas\Productos\insertProducto.Designer.cs">
       <DependentUpon>insertProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\insertProveedor.cs">
+    <Compile Include="Vistas\Proveedores\insertProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\insertProveedor.Designer.cs">
+    <Compile Include="Vistas\Proveedores\insertProveedor.Designer.cs">
       <DependentUpon>insertProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\porcProdVendProvee.cs">
+    <Compile Include="Vistas\Productos\porcProdVendProvee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\porcProdVendProvee.Designer.cs">
+    <Compile Include="Vistas\Productos\porcProdVendProvee.Designer.cs">
       <DependentUpon>porcProdVendProvee.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Principal.resx">
@@ -134,34 +134,34 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\borrarCliente.resx">
+    <EmbeddedResource Include="Vistas\Clientes\borrarCliente.resx">
       <DependentUpon>borrarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\borrarContador.resx">
+    <EmbeddedResource Include="Vistas\Contadores\borrarContador.resx">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\borrarProveedor.resx">
+    <EmbeddedResource Include="Vistas\Proveedores\borrarProveedor.resx">
       <DependentUpon>borrarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\editCliente.resx">
+    <EmbeddedResource Include="Vistas\Clientes\editCliente.resx">
       <DependentUpon>editCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\editProducto.resx">
+    <EmbeddedResource Include="Vistas\Productos\editProducto.resx">
       <DependentUpon>editProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\editProveedor.resx">
+    <EmbeddedResource Include="Vistas\Proveedores\editProveedor.resx">
       <DependentUpon>editProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\insertCliente.resx">
+    <EmbeddedResource Include="Vistas\Clientes\insertCliente.resx">
       <DependentUpon>insertCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\insertProducto.resx">
+    <EmbeddedResource Include="Vistas\Productos\insertProducto.resx">
       <DependentUpon>insertProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\insertProveedor.resx">
+    <EmbeddedResource Include="Vistas\Proveedores\insertProveedor.resx">
       <DependentUpon>insertProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\porcProdVendProvee.resx">
+    <EmbeddedResource Include="Vistas\Productos\porcProdVendProvee.resx">
       <DependentUpon>porcProdVendProvee.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
