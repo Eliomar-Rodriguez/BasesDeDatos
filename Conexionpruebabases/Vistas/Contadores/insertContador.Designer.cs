@@ -52,6 +52,10 @@
             this.rbNoContratado = new System.Windows.Forms.RadioButton();
             this.rbContratado = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -116,7 +120,7 @@
             // 
             this.radioM.AutoSize = true;
             this.radioM.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioM.Location = new System.Drawing.Point(355, 315);
+            this.radioM.Location = new System.Drawing.Point(156, 4);
             this.radioM.Margin = new System.Windows.Forms.Padding(2);
             this.radioM.Name = "radioM";
             this.radioM.Size = new System.Drawing.Size(69, 26);
@@ -129,7 +133,7 @@
             // 
             this.radioH.AutoSize = true;
             this.radioH.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioH.Location = new System.Drawing.Point(220, 315);
+            this.radioH.Location = new System.Drawing.Point(21, 4);
             this.radioH.Margin = new System.Windows.Forms.Padding(2);
             this.radioH.Name = "radioH";
             this.radioH.Size = new System.Drawing.Size(85, 26);
@@ -280,7 +284,7 @@
             // 
             this.rbNoContratado.AutoSize = true;
             this.rbNoContratado.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNoContratado.Location = new System.Drawing.Point(355, 345);
+            this.rbNoContratado.Location = new System.Drawing.Point(156, 2);
             this.rbNoContratado.Margin = new System.Windows.Forms.Padding(2);
             this.rbNoContratado.Name = "rbNoContratado";
             this.rbNoContratado.Size = new System.Drawing.Size(130, 26);
@@ -293,7 +297,7 @@
             // 
             this.rbContratado.AutoSize = true;
             this.rbContratado.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbContratado.Location = new System.Drawing.Point(220, 345);
+            this.rbContratado.Location = new System.Drawing.Point(21, 2);
             this.rbContratado.Margin = new System.Windows.Forms.Padding(2);
             this.rbContratado.Name = "rbContratado";
             this.rbContratado.Size = new System.Drawing.Size(105, 26);
@@ -313,14 +317,32 @@
             this.label9.TabIndex = 111;
             this.label9.Text = "Estado";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.radioM);
+            this.panel1.Controls.Add(this.radioH);
+            this.panel1.Location = new System.Drawing.Point(220, 318);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(286, 32);
+            this.panel1.TabIndex = 114;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.rbContratado);
+            this.panel2.Controls.Add(this.rbNoContratado);
+            this.panel2.Location = new System.Drawing.Point(220, 353);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(289, 32);
+            this.panel2.TabIndex = 115;
+            // 
             // insertContador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(521, 531);
-            this.Controls.Add(this.rbNoContratado);
-            this.Controls.Add(this.rbContratado);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtDirExacta);
             this.Controls.Add(this.label10);
@@ -328,8 +350,6 @@
             this.Controls.Add(this.cbDistritos);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.radioM);
-            this.Controls.Add(this.radioH);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtApell2);
             this.Controls.Add(this.label4);
@@ -345,6 +365,10 @@
             this.Controls.Add(this.btnGuardar);
             this.Name = "insertContador";
             this.Load += new System.EventHandler(this.insertContador_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,5 +400,7 @@
         private System.Windows.Forms.RadioButton rbNoContratado;
         private System.Windows.Forms.RadioButton rbContratado;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

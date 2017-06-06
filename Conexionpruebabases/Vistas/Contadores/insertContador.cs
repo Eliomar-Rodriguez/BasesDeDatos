@@ -48,7 +48,7 @@ namespace Conexionpruebabases.Vistas.Contadores
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Length == 0 | txtApell1.Text.Length == 0 | txtApell2.Text.Length == 0 | txtTel.Text.Length == 0 | cbDistritos.SelectedIndex == -1 | dtpFecha.Value == null | ((!radioH.Checked) && (!radioM.Checked)) | txtDirExacta.Text.Length == 0)
+            if (txtNombre.Text.Length == 0 | txtApell1.Text.Length == 0 | txtApell2.Text.Length == 0 | txtTel.Text.Length == 0 | cbDistritos.SelectedIndex == -1 | dtpFecha.Value == null | (!(rbContratado.Checked) && !(rbNoContratado.Checked)) | (!(radioM.Checked) && !(radioH.Checked)) | txtDirExacta.Text.Length == 0)
             {
                 lblError.Visible = true;
             }

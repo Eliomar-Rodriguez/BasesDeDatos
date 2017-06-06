@@ -92,6 +92,12 @@
     <Compile Include="Vistas\Contadores\borrarContador.Designer.cs">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Contadores\editContador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Contadores\editContador.Designer.cs">
+      <DependentUpon>editContador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Contadores\insertContador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Contadores\borrarContador.resx">
       <DependentUpon>borrarContador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Contadores\editContador.resx">
+      <DependentUpon>editContador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Contadores\insertContador.resx">
       <DependentUpon>insertContador.cs</DependentUpon>
