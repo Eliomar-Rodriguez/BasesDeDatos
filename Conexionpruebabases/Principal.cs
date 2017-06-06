@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Conexionpruebabases.Vistas;
 using Conexionpruebabases.Vistas.Rifas;
+using Conexionpruebabases.Vistas.Bienes;
 
 namespace Conexionpruebabases
 {
@@ -135,6 +136,16 @@ namespace Conexionpruebabases
         private void rifaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new editRifa().Show();
+        }
+
+        private void bienesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertBienes().Show();
+        }
+
+        private void bienesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new borrarBienes().Show();
         }
     }
 }

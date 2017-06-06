@@ -43,6 +43,7 @@
             this.contadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rifaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bienesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarContadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +51,7 @@
             this.contadorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.rifaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bienesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.borrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,12 +59,15 @@
             this.contadorToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedorToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.rifaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bienesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.verInformacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.compraToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.contadorToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedorToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rifaToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bienesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,7 +157,8 @@
             this.insertarVentaToolStripMenuItem,
             this.contadorToolStripMenuItem,
             this.proveedorToolStripMenuItem,
-            this.rifaToolStripMenuItem});
+            this.rifaToolStripMenuItem,
+            this.bienesToolStripMenuItem});
             this.insertarToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insertarToolStripMenuItem.Name = "insertarToolStripMenuItem";
             this.insertarToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
@@ -203,6 +209,13 @@
             this.rifaToolStripMenuItem.Text = "Rifa";
             this.rifaToolStripMenuItem.Click += new System.EventHandler(this.rifaToolStripMenuItem_Click);
             // 
+            // bienesToolStripMenuItem
+            // 
+            this.bienesToolStripMenuItem.Name = "bienesToolStripMenuItem";
+            this.bienesToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.bienesToolStripMenuItem.Text = "Bienes";
+            this.bienesToolStripMenuItem.Click += new System.EventHandler(this.bienesToolStripMenuItem_Click);
+            // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -211,7 +224,8 @@
             this.compraToolStripMenuItem,
             this.contadorToolStripMenuItem1,
             this.proveedorToolStripMenuItem1,
-            this.rifaToolStripMenuItem1});
+            this.rifaToolStripMenuItem1,
+            this.bienesToolStripMenuItem1});
             this.modificarToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
@@ -262,6 +276,12 @@
             this.rifaToolStripMenuItem1.Text = "Rifa";
             this.rifaToolStripMenuItem1.Click += new System.EventHandler(this.rifaToolStripMenuItem1_Click);
             // 
+            // bienesToolStripMenuItem1
+            // 
+            this.bienesToolStripMenuItem1.Name = "bienesToolStripMenuItem1";
+            this.bienesToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.bienesToolStripMenuItem1.Text = "Bienes";
+            // 
             // borrarToolStripMenuItem
             // 
             this.borrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -270,7 +290,8 @@
             this.compraToolStripMenuItem1,
             this.contadorToolStripMenuItem2,
             this.proveedorToolStripMenuItem2,
-            this.rifaToolStripMenuItem2});
+            this.rifaToolStripMenuItem2,
+            this.bienesToolStripMenuItem2});
             this.borrarToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrarToolStripMenuItem.Name = "borrarToolStripMenuItem";
             this.borrarToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
@@ -280,7 +301,7 @@
             // 
             this.clienteToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
@@ -288,21 +309,21 @@
             // 
             this.productoToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.productoToolStripMenuItem.Text = "Producto";
             // 
             // compraToolStripMenuItem1
             // 
             this.compraToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compraToolStripMenuItem1.Name = "compraToolStripMenuItem1";
-            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(146, 24);
+            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
             this.compraToolStripMenuItem1.Text = "Compra";
             // 
             // contadorToolStripMenuItem2
             // 
             this.contadorToolStripMenuItem2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contadorToolStripMenuItem2.Name = "contadorToolStripMenuItem2";
-            this.contadorToolStripMenuItem2.Size = new System.Drawing.Size(146, 24);
+            this.contadorToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
             this.contadorToolStripMenuItem2.Text = "Contador";
             this.contadorToolStripMenuItem2.Click += new System.EventHandler(this.contadorToolStripMenuItem2_Click);
             // 
@@ -310,16 +331,23 @@
             // 
             this.proveedorToolStripMenuItem2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proveedorToolStripMenuItem2.Name = "proveedorToolStripMenuItem2";
-            this.proveedorToolStripMenuItem2.Size = new System.Drawing.Size(146, 24);
+            this.proveedorToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
             this.proveedorToolStripMenuItem2.Text = "Proveedor";
             this.proveedorToolStripMenuItem2.Click += new System.EventHandler(this.proveedorToolStripMenuItem2_Click);
             // 
             // rifaToolStripMenuItem2
             // 
             this.rifaToolStripMenuItem2.Name = "rifaToolStripMenuItem2";
-            this.rifaToolStripMenuItem2.Size = new System.Drawing.Size(146, 24);
+            this.rifaToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
             this.rifaToolStripMenuItem2.Text = "Rifa";
             this.rifaToolStripMenuItem2.Click += new System.EventHandler(this.rifaToolStripMenuItem2_Click);
+            // 
+            // bienesToolStripMenuItem2
+            // 
+            this.bienesToolStripMenuItem2.Name = "bienesToolStripMenuItem2";
+            this.bienesToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
+            this.bienesToolStripMenuItem2.Text = "Bienes";
+            this.bienesToolStripMenuItem2.Click += new System.EventHandler(this.bienesToolStripMenuItem2_Click);
             // 
             // verInformacionToolStripMenuItem
             // 
@@ -328,7 +356,9 @@
             this.productoToolStripMenuItem1,
             this.compraToolStripMenuItem2,
             this.contadorToolStripMenuItem3,
-            this.proveedorToolStripMenuItem3});
+            this.proveedorToolStripMenuItem3,
+            this.rifaToolStripMenuItem3,
+            this.bienesToolStripMenuItem3});
             this.verInformacionToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.verInformacionToolStripMenuItem.Name = "verInformacionToolStripMenuItem";
             this.verInformacionToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
@@ -368,6 +398,18 @@
             this.proveedorToolStripMenuItem3.Name = "proveedorToolStripMenuItem3";
             this.proveedorToolStripMenuItem3.Size = new System.Drawing.Size(146, 24);
             this.proveedorToolStripMenuItem3.Text = "Proveedor";
+            // 
+            // rifaToolStripMenuItem3
+            // 
+            this.rifaToolStripMenuItem3.Name = "rifaToolStripMenuItem3";
+            this.rifaToolStripMenuItem3.Size = new System.Drawing.Size(146, 24);
+            this.rifaToolStripMenuItem3.Text = "Rifa";
+            // 
+            // bienesToolStripMenuItem3
+            // 
+            this.bienesToolStripMenuItem3.Name = "bienesToolStripMenuItem3";
+            this.bienesToolStripMenuItem3.Size = new System.Drawing.Size(146, 24);
+            this.bienesToolStripMenuItem3.Text = "Bienes";
             // 
             // Principal
             // 
@@ -424,6 +466,11 @@
         private System.Windows.Forms.ToolStripMenuItem rifaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rifaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem rifaToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem bienesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bienesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem bienesToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem rifaToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem bienesToolStripMenuItem3;
     }
 }
 
