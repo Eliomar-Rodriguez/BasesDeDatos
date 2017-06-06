@@ -163,5 +163,10 @@ namespace Conexionpruebabases
         {
             new editContador().Show();
         }
+
+        private void clienteRifaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertClienteRifa().Show();
+        }
     }
 }

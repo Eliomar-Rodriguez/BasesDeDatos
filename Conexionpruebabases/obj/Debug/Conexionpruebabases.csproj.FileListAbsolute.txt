@@ -62,3 +62,4 @@ A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.B
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.editBienes.resources
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.insertContador.resources
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.editContador.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.insertClienteRifa.resources
