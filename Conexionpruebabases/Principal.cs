@@ -105,5 +105,23 @@ namespace Conexionpruebabases
         {
             new porcProdVendProvee().Show();
         }
+
+        private void insertarVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertCompra().Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea Salir?\nVea que este sistema promete.", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new verCliente().Show();
+        }
     }
 }

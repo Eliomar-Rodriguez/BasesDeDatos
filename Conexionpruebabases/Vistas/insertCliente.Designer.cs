@@ -218,6 +218,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTel);
             this.Name = "insertCliente";
+            this.Load += new System.EventHandler(this.insertCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -92,6 +92,12 @@
     <Compile Include="Vistas\insertCliente.Designer.cs">
       <DependentUpon>insertCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\insertCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\insertCompra.Designer.cs">
+      <DependentUpon>insertCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\insertProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,12 @@
     </Compile>
     <Compile Include="Vistas\porcProdVendProvee.Designer.cs">
       <DependentUpon>porcProdVendProvee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\verCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\verCliente.Designer.cs">
+      <DependentUpon>verCliente.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -131,11 +143,17 @@
     <EmbeddedResource Include="Vistas\insertCliente.resx">
       <DependentUpon>insertCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\insertCompra.resx">
+      <DependentUpon>insertCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\insertProducto.resx">
       <DependentUpon>insertProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\porcProdVendProvee.resx">
       <DependentUpon>porcProdVendProvee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\verCliente.resx">
+      <DependentUpon>verCliente.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

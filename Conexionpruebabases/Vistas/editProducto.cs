@@ -133,5 +133,10 @@ namespace Conexionpruebabases.Vistas
             new Principal().Show();
             this.Dispose();
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

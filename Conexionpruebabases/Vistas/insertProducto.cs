@@ -43,6 +43,7 @@ namespace Conexionpruebabases.Vistas
 
                 try
                 {
+                    
                     NpgsqlConnection conn = new NpgsqlConnection();
                     conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
 
@@ -135,7 +136,6 @@ namespace Conexionpruebabases.Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Principal().Show();
             this.Dispose();
         }
     }
