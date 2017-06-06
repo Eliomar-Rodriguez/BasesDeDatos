@@ -84,51 +84,97 @@ namespace Conexionpruebabases.Vistas.Bienes
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Length == 0 | txtCantidad.Text.Length == 0 | cbEstado.SelectedIndex == -1| txtDescripcion.Text.Length == 0)
+            int n;
+            if (txtNombre.Text.Length == 0 | txtCantidad.Text.Length == 0 | cbEstado.SelectedIndex == -1 | txtDescripcion.Text.Length == 0 | !(int.TryParse(txtCantidad.Text, out n)))
             {
                 lblError.Visible = true;
             }
             else
             {
-                string descripcion = txtDescripcion.Text, nombre = txtNombre.Text, ;
+                try
+                {
+                    string descripcion = txtDescripcion.Text, nombre = txtNombre.Text;
+                    int cantidad = int.Parse(txtCantidad.Text);
+                    int estado = 5;
+                    switch (cbEstado.SelectedIndex)
+                    {
+                        case 0:
+                            estado = 1;
+                            break;
+                        case 1:
+                            estado = 2;
+                            break;
+                        case 2:
+                            estado = 3;
+                            break;
+                        case 3:
+                            estado = 4;
+                            break;
+                        case 4:
+                            estado = 5;
+                            break;
+                    }
 
-                NpgsqlConnection conn = new NpgsqlConnection();
-                conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
+                    NpgsqlConnection conn = new NpgsqlConnection();
+                    conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
 
-                conn.Open();
+                    conn.Open();
 
-                NpgsqlCommand command = new NpgsqlCommand("modificar_bienes", conn);
-                command.CommandType = CommandType.StoredProcedure;
+                    NpgsqlCommand command = new NpgsqlCommand("modificar_bienes", conn);
+                    command.CommandType = CommandType.StoredProcedure;
 
-                // creacion de variables que se enviaran por parametro en la consulta
+                    // creacion de variables que se enviaran por parametro en la consulta
 
-                NpgsqlParameter id = new NpgsqlParameter("@codigo", NpgsqlDbType.Integer);
-                id.Value = codigo_bien_actual;
-                command.Parameters.Add(id);
+                    NpgsqlParameter id = new NpgsqlParameter("@codigo", NpgsqlDbType.Integer);
+                    id.Value = codigo_bien_actual;
+                    command.Parameters.Add(id);
 
-                NpgsqlParameter idE = new NpgsqlParameter("@id_empresa", NpgsqlDbType.Integer);
-                idE.Value = 1;
-                command.Parameters.Add(id);
+                    NpgsqlParameter idE = new NpgsqlParameter("@id_empresa", NpgsqlDbType.Integer);
+                    idE.Value = 1;
+                    command.Parameters.Add(idE);
 
-                NpgsqlParameter idE = new NpgsqlParameter("@id_empresa", NpgsqlDbType.Integer);
-                idE.Value = 1;
-                command.Parameters.Add(id);
+                    NpgsqlParameter des = new NpgsqlParameter("@descripcion", NpgsqlDbType.Varchar, 250);
+                    des.Value = descripcion;
+                    command.Parameters.Add(des);
 
-                command.ExecuteReader();
+                    NpgsqlParameter nomb = new NpgsqlParameter("@nombre", NpgsqlDbType.Varchar, 50);
+                    nomb.Value = nombre;
+                    command.Parameters.Add(nomb);
+
+                    NpgsqlParameter est = new NpgsqlParameter("@estado", NpgsqlDbType.Integer);
+                    est.Value = estado;
+                    command.Parameters.Add(est);
+
+                    NpgsqlParameter cant = new NpgsqlParameter("@cantidad", NpgsqlDbType.Integer);
+                    cant.Value = cantidad;
+                    command.Parameters.Add(cant);
+
+                    command.ExecuteReader();
 
 
-                lblError.Visible = true;
-                lblError.Text = "Listo! la rifa ha sido eliminada";
-                lblError.ForeColor = Color.Green;
+                    lblError.Visible = true;
+                    lblError.Text = "Listo! bienes actualizados";
+                    lblError.ForeColor = Color.Green;
 
-                txtDescripcion.Clear();
-                cbEstado.SelectedIndex = -1;
-                txtCantidad.Clear();
-                txtNombre.Clear();
-                cbBienes.SelectedIndex = -1;
-                cargarBienes();
-                conn.Close();
+                    txtDescripcion.Clear();
+                    cbEstado.SelectedIndex = -1;
+                    txtCantidad.Clear();
+                    txtNombre.Clear();
+                    cbBienes.SelectedIndex = -1;
+                    cargarBienes();
+                    conn.Close();
+                } catch (Exception ex) { lblError.Visible = true; lblError.Text = ex.ToString(); }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            cbEstado.Text = "Damn!!";
+        }
+
+        private void editBienes_Load(object sender, EventArgs e)
+        {
+            cargarBienes();
         }
     }
 }

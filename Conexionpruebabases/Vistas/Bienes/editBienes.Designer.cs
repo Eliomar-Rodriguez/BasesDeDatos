@@ -231,6 +231,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnGuardar);
             this.Name = "editBienes";
+            this.Load += new System.EventHandler(this.editBienes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

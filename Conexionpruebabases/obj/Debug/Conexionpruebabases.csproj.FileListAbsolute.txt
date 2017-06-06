@@ -59,3 +59,5 @@ A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.R
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.editRifa.resources
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.insertBienes.resources
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.borrarBienes.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.editBienes.resources
+A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.insertContador.resources

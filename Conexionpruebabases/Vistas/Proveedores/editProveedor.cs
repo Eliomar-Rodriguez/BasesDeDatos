@@ -15,6 +15,9 @@ namespace Conexionpruebabases.Vistas
     public partial class editProveedor : Form
     {
         public static List<string> distritos = new List<string>();
+        public static List<string> proveedores = new List<string>();
+        public static string cedula_juridica_Actual;
+        public static string id_distrito_actual;
         public editProveedor()
         {
             InitializeComponent();
@@ -22,21 +25,69 @@ namespace Conexionpruebabases.Vistas
 
         private void editProveedor_Load(object sender, EventArgs e)
         {
+            cargarDistritos();
+            cargarProveedores();
+        }
+
+        private void cargarDistritos()
+        {
+            cbDistritos.Items.Clear();
             NpgsqlConnection conn = new NpgsqlConnection();
             conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
 
             conn.Open();
 
-            NpgsqlCommand command = new NpgsqlCommand("SELECT * from distritos;", conn);
+            NpgsqlCommand command = new NpgsqlCommand("SELECT id_distrito,nombre_distrito from distritos;", conn);
 
             NpgsqlDataReader dr = command.ExecuteReader();
 
             while (dr.Read())
             {
                 distritos.Add(dr[0].ToString());
-                cbDistritos.Items.AddRange(new object[] { dr[2].ToString() });
+                cbDistritos.Items.AddRange(new object[] { dr[1].ToString() });
             }
             conn.Close();
+        }
+
+        private void cargarProveedores()
+        {
+            cbCedulaJuridica.Items.Clear();
+            NpgsqlConnection conn = new NpgsqlConnection();
+            conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
+
+            conn.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand("SELECT cedula_juridica,nombre from proveedores;", conn);
+
+            NpgsqlDataReader dr = command.ExecuteReader();
+
+            while (dr.Read())
+            {
+                proveedores.Add(dr[0].ToString());
+                cbCedulaJuridica.Items.AddRange(new object[] { dr[1].ToString() });
+            }
+            conn.Close();
+        }
+
+        private string getDistrito(int id)
+        {
+            string n = "";
+            NpgsqlConnection conn = new NpgsqlConnection();
+            conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
+
+            conn.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand("SELECT id_distrito,nombre_distrito from distritos;", conn);
+
+            NpgsqlDataReader dr = command.ExecuteReader();
+
+            while (dr.Read())
+            {
+                if (int.Parse(dr[0].ToString()) == id)
+                    n = dr[1].ToString();
+            }
+            conn.Close();
+            return n;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -46,7 +97,7 @@ namespace Conexionpruebabases.Vistas
 
             conn.Open();
 
-            NpgsqlCommand command = new NpgsqlCommand("SELECT * from proveedores where cedula_juridica='" + txtCedulaJuridica.Text + "';", conn);
+            NpgsqlCommand command = new NpgsqlCommand("SELECT * from proveedores where cedula_juridica='" + cedula_juridica_Actual + "';", conn);
 
             NpgsqlDataReader dr = command.ExecuteReader();
 
@@ -58,6 +109,7 @@ namespace Conexionpruebabases.Vistas
                 txtNombre.Text = dr[3].ToString();
                 txtApellido1.Text = dr[4].ToString();
                 txtApellido2.Text = dr[5].ToString();
+                cbDistritos.Text = getDistrito(int.Parse(dr[6].ToString()));
                 txtDirExacta.Text = dr[7].ToString();
             }           
 
@@ -75,7 +127,7 @@ namespace Conexionpruebabases.Vistas
             {
                 string  dirExacta = txtDirExacta.Text, nombreEmpresa = txtNombreEmpresa.Text;
                 char[] cedulaJuridica = txtCedulaJuridica.Text.ToCharArray(), nombre = txtNombre.Text.ToCharArray(), apellido1 = txtApellido1.Text.ToCharArray(), apellido2 = txtApellido2.Text.ToCharArray();
-                int valoracion = int.Parse(txtValoracion.Text), idDistrito = int.Parse(distritos[cbDistritos.SelectedIndex]);
+                int valoracion = int.Parse(txtValoracion.Text), idDistrito = int.Parse(id_distrito_actual);
 
                 try
                 {
@@ -126,6 +178,7 @@ namespace Conexionpruebabases.Vistas
                     lblError.ForeColor = Color.Green;
                     lblError.Visible = true;
 
+                    cbCedulaJuridica.SelectedIndex = -1;
                     txtCedulaJuridica.Clear();
                     txtNombreEmpresa.Clear();
                     txtValoracion.Clear();
@@ -143,6 +196,24 @@ namespace Conexionpruebabases.Vistas
                     lblError.Text = ex.ToString(); ;
                 }
             }
+        }
+
+        private void cbCedulaJuridica_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                cedula_juridica_Actual = proveedores[cbCedulaJuridica.SelectedIndex];
+            }
+            catch (Exception ex) { }
+        }
+
+        private void cbDistritos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                id_distrito_actual = distritos[cbDistritos.SelectedIndex];
+            }
+            catch (Exception ex) { }
         }
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Conexionpruebabases.Vistas;
 using Conexionpruebabases.Vistas.Rifas;
 using Conexionpruebabases.Vistas.Bienes;
+using Conexionpruebabases.Vistas.Contadores;
 
 namespace Conexionpruebabases
 {
@@ -146,6 +147,16 @@ namespace Conexionpruebabases
         private void bienesToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             new borrarBienes().Show();
+        }
+
+        private void bienesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new editBienes().Show();
+        }
+
+        private void contadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertContador().Show();
         }
     }
 }
