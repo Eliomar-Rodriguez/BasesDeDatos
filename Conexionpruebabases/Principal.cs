@@ -10,6 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Conexionpruebabases.Vistas;
+using Conexionpruebabases.Vistas.Rifas;
+using Conexionpruebabases.Vistas.Bienes;
+using Conexionpruebabases.Vistas.Contadores;
 
 namespace Conexionpruebabases
 {
@@ -106,6 +109,7 @@ namespace Conexionpruebabases
             new porcProdVendProvee().Show();
         }
 
+<<<<<<< HEAD
         private void insertarVentaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertCompra().Show();
@@ -122,6 +126,66 @@ namespace Conexionpruebabases
         private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new verCliente().Show();
+=======
+        private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertProveedor().Show();
+        }
+
+        private void proveedorToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new borrarProveedor().Show();
+        }
+
+        private void proveedorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new editProveedor().Show();
+        }
+
+        private void rifaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertRifas().Show();
+        }
+
+        private void rifaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new borrarRifa().Show();
+        }
+
+        private void rifaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new editRifa().Show();
+        }
+
+        private void bienesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertBienes().Show();
+        }
+
+        private void bienesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new borrarBienes().Show();
+        }
+
+        private void bienesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new editBienes().Show();
+        }
+
+        private void contadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertContador().Show();
+        }
+
+        private void contadorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new editContador().Show();
+        }
+
+        private void clienteRifaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertClienteRifa().Show();
+>>>>>>> b2fefb8af8606523143fece6df0b26080dc929c1
         }
     }
 }

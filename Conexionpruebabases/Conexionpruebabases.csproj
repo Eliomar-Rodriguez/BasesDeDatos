@@ -62,58 +62,130 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\borrarCliente.cs">
+    <Compile Include="Vistas\Bienes\borrarBienes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\borrarCliente.Designer.cs">
+    <Compile Include="Vistas\Bienes\borrarBienes.Designer.cs">
+      <DependentUpon>borrarBienes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Clientes\borrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes\borrarCliente.Designer.cs">
       <DependentUpon>borrarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\borrarContador.cs">
+    <Compile Include="Vistas\Contadores\borrarContador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\borrarContador.Designer.cs">
+    <Compile Include="Vistas\Contadores\borrarContador.Designer.cs">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\editCliente.cs">
+    <Compile Include="Vistas\Proveedores\borrarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\editCliente.Designer.cs">
+    <Compile Include="Vistas\Proveedores\borrarProveedor.Designer.cs">
+      <DependentUpon>borrarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Rifas\borrarRifa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Rifas\borrarRifa.Designer.cs">
+      <DependentUpon>borrarRifa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Bienes\editBienes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Bienes\editBienes.Designer.cs">
+      <DependentUpon>editBienes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Clientes\editCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes\editCliente.Designer.cs">
       <DependentUpon>editCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\editProducto.cs">
+    <Compile Include="Vistas\Contadores\editContador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\editProducto.Designer.cs">
+    <Compile Include="Vistas\Contadores\editContador.Designer.cs">
+      <DependentUpon>editContador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Productos\editProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Productos\editProducto.Designer.cs">
       <DependentUpon>editProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\insertCliente.cs">
+    <Compile Include="Vistas\Proveedores\editProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\insertCliente.Designer.cs">
+    <Compile Include="Vistas\Proveedores\editProveedor.Designer.cs">
+      <DependentUpon>editProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Rifas\editRifa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Rifas\editRifa.Designer.cs">
+      <DependentUpon>editRifa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Bienes\insertBienes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Bienes\insertBienes.Designer.cs">
+      <DependentUpon>insertBienes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Clientes\insertCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes\insertCliente.Designer.cs">
       <DependentUpon>insertCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\insertCompra.cs">
+    <Compile Include="Vistas\insertClienteRifa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\insertCompra.Designer.cs">
+    <Compile Include="Vistas\insertClienteRifa.Designer.cs">
+      <DependentUpon>insertClienteRifa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Compras\insertCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Compras\insertCompra.Designer.cs">
       <DependentUpon>insertCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\insertProducto.cs">
+    <Compile Include="Vistas\Contadores\insertContador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\insertProducto.Designer.cs">
+    <Compile Include="Vistas\Contadores\insertContador.Designer.cs">
+      <DependentUpon>insertContador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Productos\insertProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Productos\insertProducto.Designer.cs">
       <DependentUpon>insertProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\porcProdVendProvee.cs">
+    <Compile Include="Vistas\Proveedores\insertProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\porcProdVendProvee.Designer.cs">
+    <Compile Include="Vistas\Proveedores\insertProveedor.Designer.cs">
+      <DependentUpon>insertProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Rifas\insertRifas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Rifas\insertRifas.Designer.cs">
+      <DependentUpon>insertRifas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Consultas\porcProdVendProvee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Consultas\porcProdVendProvee.Designer.cs">
       <DependentUpon>porcProdVendProvee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\verCliente.cs">
+    <Compile Include="Vistas\Clientes\verCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\verCliente.Designer.cs">
+    <Compile Include="Vistas\Clientes\verCliente.Designer.cs">
       <DependentUpon>verCliente.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Principal.resx">
@@ -128,31 +200,67 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\borrarCliente.resx">
+    <EmbeddedResource Include="Vistas\Bienes\borrarBienes.resx">
+      <DependentUpon>borrarBienes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Clientes\borrarCliente.resx">
       <DependentUpon>borrarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\borrarContador.resx">
+    <EmbeddedResource Include="Vistas\Contadores\borrarContador.resx">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\editCliente.resx">
+    <EmbeddedResource Include="Vistas\Proveedores\borrarProveedor.resx">
+      <DependentUpon>borrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Rifas\borrarRifa.resx">
+      <DependentUpon>borrarRifa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Bienes\editBienes.resx">
+      <DependentUpon>editBienes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Clientes\editCliente.resx">
       <DependentUpon>editCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\editProducto.resx">
+    <EmbeddedResource Include="Vistas\Contadores\editContador.resx">
+      <DependentUpon>editContador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Productos\editProducto.resx">
       <DependentUpon>editProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\insertCliente.resx">
+    <EmbeddedResource Include="Vistas\Proveedores\editProveedor.resx">
+      <DependentUpon>editProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Rifas\editRifa.resx">
+      <DependentUpon>editRifa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Bienes\insertBienes.resx">
+      <DependentUpon>insertBienes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Clientes\insertCliente.resx">
       <DependentUpon>insertCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\insertCompra.resx">
+    <EmbeddedResource Include="Vistas\insertClienteRifa.resx">
+      <DependentUpon>insertClienteRifa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Compras\insertCompra.resx">
       <DependentUpon>insertCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\insertProducto.resx">
+    <EmbeddedResource Include="Vistas\Contadores\insertContador.resx">
+      <DependentUpon>insertContador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Productos\insertProducto.resx">
       <DependentUpon>insertProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\porcProdVendProvee.resx">
+    <EmbeddedResource Include="Vistas\Proveedores\insertProveedor.resx">
+      <DependentUpon>insertProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Rifas\insertRifas.resx">
+      <DependentUpon>insertRifas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Consultas\porcProdVendProvee.resx">
       <DependentUpon>porcProdVendProvee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\verCliente.resx">
+    <EmbeddedResource Include="Vistas\Clientes\verCliente.resx">
       <DependentUpon>verCliente.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -168,6 +276,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
