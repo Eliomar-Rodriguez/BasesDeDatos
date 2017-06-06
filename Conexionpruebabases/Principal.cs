@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Conexionpruebabases.Vistas;
+using Conexionpruebabases.Vistas.Rifas;
 
 namespace Conexionpruebabases
 {
@@ -119,6 +120,21 @@ namespace Conexionpruebabases
         private void proveedorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new editProveedor().Show();
+        }
+
+        private void rifaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertRifas().Show();
+        }
+
+        private void rifaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new borrarRifa().Show();
+        }
+
+        private void rifaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new editRifa().Show();
         }
     }
 }
