@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,6 +46,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtTel = new System.Windows.Forms.MaskedTextBox();
             this.vista = new System.Windows.Forms.DataGridView();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.vista)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,13 +206,61 @@
             // 
             // vista
             // 
+            this.vista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.vista.BackgroundColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.vista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.vista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Telefono,
+            this.Nombre,
+            this.Apellido1,
+            this.Apellido2,
+            this.Genero});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.vista.DefaultCellStyle = dataGridViewCellStyle2;
             this.vista.Location = new System.Drawing.Point(751, 65);
             this.vista.Name = "vista";
             this.vista.RowTemplate.Height = 28;
             this.vista.Size = new System.Drawing.Size(911, 449);
             this.vista.TabIndex = 30;
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido1
+            // 
+            this.Apellido1.HeaderText = "Apellido1";
+            this.Apellido1.Name = "Apellido1";
+            // 
+            // Apellido2
+            // 
+            this.Apellido2.HeaderText = "Apellido2";
+            this.Apellido2.Name = "Apellido2";
+            // 
+            // Genero
+            // 
+            this.Genero.HeaderText = "Genero";
+            this.Genero.Name = "Genero";
             // 
             // verCliente
             // 
@@ -254,5 +309,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox txtTel;
         private System.Windows.Forms.DataGridView vista;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Genero;
     }
 }
