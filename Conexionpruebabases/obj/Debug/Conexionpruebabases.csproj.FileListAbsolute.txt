@@ -68,6 +68,41 @@ A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.C
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.editContador.resources
 A:\TEC\Bases\Respaldo\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.insertClienteRifa.resources
 >>>>>>> b2fefb8af8606523143fece6df0b26080dc929c1
+A:\TEC\Bases\Proyecto\Conexionpruebabases\bin\Debug\Conexionpruebabases.exe.config
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.exe
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.pdb
+A:\TEC\Bases\Proyecto\Conexionpruebabases\bin\Debug\Conexionpruebabases.exe
+A:\TEC\Bases\Proyecto\Conexionpruebabases\bin\Debug\Conexionpruebabases.pdb
+A:\TEC\Bases\Proyecto\Conexionpruebabases\bin\Debug\Npgsql.pdb
+A:\TEC\Bases\Proyecto\Conexionpruebabases\bin\Debug\Npgsql.xml
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.csprojResolveAssemblyReference.cache
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Principal.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Properties.Resources.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.borrarBienes.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarCliente.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarContador.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertProvincia.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarProveedor.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.borrarRifa.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.editBienes.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.editCliente.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.editContador.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.editProducto.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.editProveedor.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.editRifa.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.insertBienes.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertCliente.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.insertClienteRifa.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertCompra.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.insertContador.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertProducto.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertProveedor.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.insertRifas.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.porcProdVendProvee.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.verCliente.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.csproj.GenerateResource.Cache
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertCanton.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertDistritos.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.borrarBienes.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarProveedor.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.borrarRifa.resources
@@ -84,3 +119,8 @@ C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.insertar_tipo.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.modificar_tipo.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Proveedores.selectProveedor.resources
+>>>>>>> d633a821b3ba9535d5801f9aefadcd2fbad9ff5d
+>>>>>>> 3976a02a72bd8e5a21c4f12acaea406eb084e616
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertCanton.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertDistritos.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertProvincia.resources

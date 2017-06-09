@@ -96,11 +96,8 @@ namespace Conexionpruebabases.Vistas
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            new Principal().Show();
         }
-
-        private void insertCliente_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
