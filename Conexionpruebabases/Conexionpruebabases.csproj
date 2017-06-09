@@ -206,6 +206,24 @@
     <Compile Include="Vistas\Clientes\verCliente.Designer.cs">
       <DependentUpon>verCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Tipos - Productos\eliminar_tipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Tipos - Productos\eliminar_tipo.designer.cs">
+      <DependentUpon>eliminar_tipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Tipos - Productos\insertar_tipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Tipos - Productos\insertar_tipo.designer.cs">
+      <DependentUpon>insertar_tipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Tipos - Productos\modificar_tipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Tipos - Productos\modificar_tipo.designer.cs">
+      <DependentUpon>modificar_tipo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +308,17 @@
     <EmbeddedResource Include="Vistas\Clientes\verCliente.resx">
       <DependentUpon>verCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Tipos - Productos\eliminar_tipo.resx">
+      <DependentUpon>eliminar_tipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Tipos - Productos\insertar_tipo.resx">
+      <DependentUpon>insertar_tipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Tipos - Productos\modificar_tipo.resx">
+      <DependentUpon>modificar_tipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

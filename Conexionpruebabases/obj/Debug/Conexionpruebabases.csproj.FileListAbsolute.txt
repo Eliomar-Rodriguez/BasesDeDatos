@@ -103,3 +103,19 @@ A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.v
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.csproj.GenerateResource.Cache
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertCanton.resources
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertDistritos.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.borrarBienes.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarProveedor.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.borrarRifa.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.editBienes.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.editContador.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.editProveedor.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.editRifa.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Bienes.insertBienes.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.insertClienteRifa.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.insertContador.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertProveedor.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Rifas.insertRifas.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.eliminar_tipo.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.insertar_tipo.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.modificar_tipo.resources
+>>>>>>> d633a821b3ba9535d5801f9aefadcd2fbad9ff5d
