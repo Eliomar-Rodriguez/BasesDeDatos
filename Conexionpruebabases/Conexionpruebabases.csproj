@@ -86,6 +86,12 @@
     <Compile Include="Vistas\Proveedores\borrarProveedor.Designer.cs">
       <DependentUpon>borrarProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Proveedores\selectProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Proveedores\selectProveedor.Designer.cs">
+      <DependentUpon>selectProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Rifas\borrarRifa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Proveedores\borrarProveedor.resx">
       <DependentUpon>borrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Proveedores\selectProveedor.resx">
+      <DependentUpon>selectProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Rifas\borrarRifa.resx">
       <DependentUpon>borrarRifa.cs</DependentUpon>

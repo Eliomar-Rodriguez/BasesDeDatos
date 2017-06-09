@@ -13,6 +13,7 @@ using Conexionpruebabases.Vistas;
 using Conexionpruebabases.Vistas.Rifas;
 using Conexionpruebabases.Vistas.Bienes;
 using Conexionpruebabases.Vistas.Contadores;
+using Conexionpruebabases.Vistas.Proveedores;
 
 namespace Conexionpruebabases
 {
@@ -185,6 +186,11 @@ namespace Conexionpruebabases
         private void clienteRifaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertClienteRifa().Show();
+        }
+
+        private void proveedorToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            new selectProveedor().Show();
         }
     }
 }
