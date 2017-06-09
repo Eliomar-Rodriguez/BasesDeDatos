@@ -213,7 +213,7 @@ namespace Conexionpruebabases.Vistas
             {
                 id_distrito_actual = distritos[cbDistritos.SelectedIndex];
             }
-            catch (Exception ex) { }
+            catch (Exception ex) { lblError.Visible = true; lblError.Text = ex.ToString(); }
         }
     }
 }

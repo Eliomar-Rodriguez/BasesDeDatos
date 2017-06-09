@@ -13,6 +13,7 @@ using Conexionpruebabases.Vistas;
 using Conexionpruebabases.Vistas.Rifas;
 using Conexionpruebabases.Vistas.Bienes;
 using Conexionpruebabases.Vistas.Contadores;
+using Conexionpruebabases.Vistas.DivisionesPoliticas;
 
 namespace Conexionpruebabases
 {
@@ -26,13 +27,13 @@ namespace Conexionpruebabases
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
         // seleccionar con una funcion que retorna setof
         private void button1_Click(object sender, EventArgs e)
         {
         }
-        
+
 
         private void rdbH_CheckedChanged(object sender, EventArgs e)
         {
@@ -51,7 +52,7 @@ namespace Conexionpruebabases
 
         private void consulta1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             NpgsqlConnection conn = new NpgsqlConnection();
             conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
 
@@ -109,7 +110,6 @@ namespace Conexionpruebabases
             new porcProdVendProvee().Show();
         }
 
-<<<<<<< HEAD
         private void insertarVentaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertCompra().Show();
@@ -126,7 +126,8 @@ namespace Conexionpruebabases
         private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new verCliente().Show();
-=======
+        } 
+
         private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertProveedor().Show();
@@ -185,7 +186,21 @@ namespace Conexionpruebabases
         private void clienteRifaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertClienteRifa().Show();
->>>>>>> b2fefb8af8606523143fece6df0b26080dc929c1
+        }
+
+        private void provinciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertProvincia().Show();
+        }
+
+        private void cantónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertCanton().Show();
+        }
+
+        private void distritoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertDistritos().Show();
         }
     }
 }
