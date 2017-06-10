@@ -118,6 +118,7 @@ C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.eliminar_tipo.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.insertar_tipo.resources
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.modificar_tipo.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Proveedores.selectProveedor.resources
 >>>>>>> d633a821b3ba9535d5801f9aefadcd2fbad9ff5d
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.borrarProvincia.resources
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.tipos_productos.eliminar_tipo.resources
@@ -128,3 +129,9 @@ A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.D
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.editProvincia.resources
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.editCanton.resources
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.editDistrito.resources
+>>>>>>> 3976a02a72bd8e5a21c4f12acaea406eb084e616
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertCanton.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertDistritos.resources
+C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertProvincia.resources
+>>>>>>> d41635716cb783e8ff368171c8574b3f6b4b28aa
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Proveedores.selectProveedor.resources

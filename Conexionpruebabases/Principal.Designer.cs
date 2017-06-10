@@ -38,7 +38,6 @@
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteRifaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,6 +81,7 @@
             this.rifaToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.bienesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteRifaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,9 +96,8 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(882, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1323, 40);
             this.menuStrip1.TabIndex = 14;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -112,14 +111,14 @@
             this.porcentajeDeProductosVendidosToolStripMenuItem});
             this.consultasToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(131, 36);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // consulta1ToolStripMenuItem
             // 
             this.consulta1ToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consulta1ToolStripMenuItem.Name = "consulta1ToolStripMenuItem";
-            this.consulta1ToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
+            this.consulta1ToolStripMenuItem.Size = new System.Drawing.Size(608, 34);
             this.consulta1ToolStripMenuItem.Text = "Promedio compras mensual";
             this.consulta1ToolStripMenuItem.Click += new System.EventHandler(this.consulta1ToolStripMenuItem_Click);
             // 
@@ -127,28 +126,28 @@
             // 
             this.consulta2ToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consulta2ToolStripMenuItem.Name = "consulta2ToolStripMenuItem";
-            this.consulta2ToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
+            this.consulta2ToolStripMenuItem.Size = new System.Drawing.Size(608, 34);
             this.consulta2ToolStripMenuItem.Text = "Producto más comprado por un cliente";
             // 
             // consulta3ToolStripMenuItem
             // 
             this.consulta3ToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consulta3ToolStripMenuItem.Name = "consulta3ToolStripMenuItem";
-            this.consulta3ToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
+            this.consulta3ToolStripMenuItem.Size = new System.Drawing.Size(608, 34);
             this.consulta3ToolStripMenuItem.Text = "Los mejores 3 clientes del último año";
             // 
             // consulta4ToolStripMenuItem
             // 
             this.consulta4ToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consulta4ToolStripMenuItem.Name = "consulta4ToolStripMenuItem";
-            this.consulta4ToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
+            this.consulta4ToolStripMenuItem.Size = new System.Drawing.Size(608, 34);
             this.consulta4ToolStripMenuItem.Text = "Producto menos comprado";
             // 
             // porcentajeDeProductosVendidosToolStripMenuItem
             // 
             this.porcentajeDeProductosVendidosToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.porcentajeDeProductosVendidosToolStripMenuItem.Name = "porcentajeDeProductosVendidosToolStripMenuItem";
-            this.porcentajeDeProductosVendidosToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
+            this.porcentajeDeProductosVendidosToolStripMenuItem.Size = new System.Drawing.Size(608, 34);
             this.porcentajeDeProductosVendidosToolStripMenuItem.Text = "Porcentaje de productos vendidos de un proveedor";
             this.porcentajeDeProductosVendidosToolStripMenuItem.Click += new System.EventHandler(this.porcentajeDeProductosVendidosToolStripMenuItem_Click);
             // 
@@ -161,13 +160,14 @@
             this.verInformacionToolStripMenuItem});
             this.mantenimientosToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
-            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
+            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(199, 36);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
             // 
             // insertarToolStripMenuItem
             // 
             this.insertarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.insertarClienteToolStripMenuItem,
+            this.clienteRifaToolStripMenuItem,
             this.insertarProductoToolStripMenuItem,
             this.insertarVentaToolStripMenuItem,
             this.contadorToolStripMenuItem,
@@ -177,31 +177,22 @@
             this.divisionesPolíticasToolStripMenuItem});
             this.insertarToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insertarToolStripMenuItem.Name = "insertarToolStripMenuItem";
-            this.insertarToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.insertarToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
             this.insertarToolStripMenuItem.Text = "Insertar";
             // 
             // insertarClienteToolStripMenuItem
             // 
-            this.insertarClienteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clienteRifaToolStripMenuItem});
             this.insertarClienteToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insertarClienteToolStripMenuItem.Name = "insertarClienteToolStripMenuItem";
-            this.insertarClienteToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.insertarClienteToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.insertarClienteToolStripMenuItem.Text = "Cliente";
             this.insertarClienteToolStripMenuItem.Click += new System.EventHandler(this.insertarClienteToolStripMenuItem_Click);
-            // 
-            // clienteRifaToolStripMenuItem
-            // 
-            this.clienteRifaToolStripMenuItem.Name = "clienteRifaToolStripMenuItem";
-            this.clienteRifaToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
-            this.clienteRifaToolStripMenuItem.Text = "Cliente - Rifa";
-            this.clienteRifaToolStripMenuItem.Click += new System.EventHandler(this.clienteRifaToolStripMenuItem_Click);
             // 
             // insertarProductoToolStripMenuItem
             // 
             this.insertarProductoToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insertarProductoToolStripMenuItem.Name = "insertarProductoToolStripMenuItem";
-            this.insertarProductoToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.insertarProductoToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.insertarProductoToolStripMenuItem.Text = "Producto";
             this.insertarProductoToolStripMenuItem.Click += new System.EventHandler(this.insertarProductoToolStripMenuItem_Click);
             // 
@@ -209,7 +200,7 @@
             // 
             this.insertarVentaToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insertarVentaToolStripMenuItem.Name = "insertarVentaToolStripMenuItem";
-            this.insertarVentaToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.insertarVentaToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.insertarVentaToolStripMenuItem.Text = "Compra";
             this.insertarVentaToolStripMenuItem.Click += new System.EventHandler(this.insertarVentaToolStripMenuItem_Click);
             // 
@@ -217,7 +208,7 @@
             // 
             this.contadorToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contadorToolStripMenuItem.Name = "contadorToolStripMenuItem";
-            this.contadorToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.contadorToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.contadorToolStripMenuItem.Text = "Contador";
             this.contadorToolStripMenuItem.Click += new System.EventHandler(this.contadorToolStripMenuItem_Click);
             // 
@@ -225,21 +216,21 @@
             // 
             this.proveedorToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proveedorToolStripMenuItem.Name = "proveedorToolStripMenuItem";
-            this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.proveedorToolStripMenuItem.Text = "Proveedor";
             this.proveedorToolStripMenuItem.Click += new System.EventHandler(this.proveedorToolStripMenuItem_Click);
             // 
             // rifaToolStripMenuItem
             // 
             this.rifaToolStripMenuItem.Name = "rifaToolStripMenuItem";
-            this.rifaToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.rifaToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.rifaToolStripMenuItem.Text = "Rifa";
             this.rifaToolStripMenuItem.Click += new System.EventHandler(this.rifaToolStripMenuItem_Click);
             // 
             // bienesToolStripMenuItem
             // 
             this.bienesToolStripMenuItem.Name = "bienesToolStripMenuItem";
-            this.bienesToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.bienesToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.bienesToolStripMenuItem.Text = "Bienes";
             this.bienesToolStripMenuItem.Click += new System.EventHandler(this.bienesToolStripMenuItem_Click);
             // 
@@ -250,27 +241,27 @@
             this.cantónToolStripMenuItem,
             this.distritoToolStripMenuItem});
             this.divisionesPolíticasToolStripMenuItem.Name = "divisionesPolíticasToolStripMenuItem";
-            this.divisionesPolíticasToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.divisionesPolíticasToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.divisionesPolíticasToolStripMenuItem.Text = "Divisiones Políticas";
             // 
             // provinciaToolStripMenuItem
             // 
             this.provinciaToolStripMenuItem.Name = "provinciaToolStripMenuItem";
-            this.provinciaToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.provinciaToolStripMenuItem.Size = new System.Drawing.Size(192, 34);
             this.provinciaToolStripMenuItem.Text = "Provincia";
             this.provinciaToolStripMenuItem.Click += new System.EventHandler(this.provinciaToolStripMenuItem_Click);
             // 
             // cantónToolStripMenuItem
             // 
             this.cantónToolStripMenuItem.Name = "cantónToolStripMenuItem";
-            this.cantónToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.cantónToolStripMenuItem.Size = new System.Drawing.Size(192, 34);
             this.cantónToolStripMenuItem.Text = "Cantón";
             this.cantónToolStripMenuItem.Click += new System.EventHandler(this.cantónToolStripMenuItem_Click);
             // 
             // distritoToolStripMenuItem
             // 
             this.distritoToolStripMenuItem.Name = "distritoToolStripMenuItem";
-            this.distritoToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.distritoToolStripMenuItem.Size = new System.Drawing.Size(192, 34);
             this.distritoToolStripMenuItem.Text = "Distrito";
             this.distritoToolStripMenuItem.Click += new System.EventHandler(this.distritoToolStripMenuItem_Click);
             // 
@@ -287,14 +278,14 @@
             this.divisionesPolíticasToolStripMenuItem2});
             this.modificarToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
             this.modificarToolStripMenuItem.Text = "Modificar";
             // 
             // modificarClienteToolStripMenuItem
             // 
             this.modificarClienteToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarClienteToolStripMenuItem.Name = "modificarClienteToolStripMenuItem";
-            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(202, 34);
             this.modificarClienteToolStripMenuItem.Text = "Cliente";
             this.modificarClienteToolStripMenuItem.Click += new System.EventHandler(this.modificarClienteToolStripMenuItem_Click);
             // 
@@ -302,7 +293,7 @@
             // 
             this.modificarContadorToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarContadorToolStripMenuItem.Name = "modificarContadorToolStripMenuItem";
-            this.modificarContadorToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.modificarContadorToolStripMenuItem.Size = new System.Drawing.Size(202, 34);
             this.modificarContadorToolStripMenuItem.Text = "Producto";
             this.modificarContadorToolStripMenuItem.Click += new System.EventHandler(this.modificarContadorToolStripMenuItem_Click);
             // 
@@ -310,14 +301,14 @@
             // 
             this.compraToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compraToolStripMenuItem.Name = "compraToolStripMenuItem";
-            this.compraToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.compraToolStripMenuItem.Size = new System.Drawing.Size(202, 34);
             this.compraToolStripMenuItem.Text = "Compra";
             // 
             // contadorToolStripMenuItem1
             // 
             this.contadorToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contadorToolStripMenuItem1.Name = "contadorToolStripMenuItem1";
-            this.contadorToolStripMenuItem1.Size = new System.Drawing.Size(204, 24);
+            this.contadorToolStripMenuItem1.Size = new System.Drawing.Size(202, 34);
             this.contadorToolStripMenuItem1.Text = "Contador";
             this.contadorToolStripMenuItem1.Click += new System.EventHandler(this.contadorToolStripMenuItem1_Click);
             // 
@@ -325,21 +316,21 @@
             // 
             this.proveedorToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proveedorToolStripMenuItem1.Name = "proveedorToolStripMenuItem1";
-            this.proveedorToolStripMenuItem1.Size = new System.Drawing.Size(204, 24);
+            this.proveedorToolStripMenuItem1.Size = new System.Drawing.Size(202, 34);
             this.proveedorToolStripMenuItem1.Text = "Proveedor";
             this.proveedorToolStripMenuItem1.Click += new System.EventHandler(this.proveedorToolStripMenuItem1_Click);
             // 
             // rifaToolStripMenuItem1
             // 
             this.rifaToolStripMenuItem1.Name = "rifaToolStripMenuItem1";
-            this.rifaToolStripMenuItem1.Size = new System.Drawing.Size(204, 24);
+            this.rifaToolStripMenuItem1.Size = new System.Drawing.Size(202, 34);
             this.rifaToolStripMenuItem1.Text = "Rifa";
             this.rifaToolStripMenuItem1.Click += new System.EventHandler(this.rifaToolStripMenuItem1_Click);
             // 
             // bienesToolStripMenuItem1
             // 
             this.bienesToolStripMenuItem1.Name = "bienesToolStripMenuItem1";
-            this.bienesToolStripMenuItem1.Size = new System.Drawing.Size(204, 24);
+            this.bienesToolStripMenuItem1.Size = new System.Drawing.Size(202, 34);
             this.bienesToolStripMenuItem1.Text = "Bienes";
             this.bienesToolStripMenuItem1.Click += new System.EventHandler(this.bienesToolStripMenuItem1_Click);
             // 
@@ -387,14 +378,14 @@
             this.divisionesPolíticasToolStripMenuItem1});
             this.borrarToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrarToolStripMenuItem.Name = "borrarToolStripMenuItem";
-            this.borrarToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.borrarToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
             this.borrarToolStripMenuItem.Text = "Borrar";
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(202, 34);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
@@ -402,21 +393,21 @@
             // 
             this.productoToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(202, 34);
             this.productoToolStripMenuItem.Text = "Producto";
             // 
             // compraToolStripMenuItem1
             // 
             this.compraToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compraToolStripMenuItem1.Name = "compraToolStripMenuItem1";
-            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(204, 24);
+            this.compraToolStripMenuItem1.Size = new System.Drawing.Size(202, 34);
             this.compraToolStripMenuItem1.Text = "Compra";
             // 
             // contadorToolStripMenuItem2
             // 
             this.contadorToolStripMenuItem2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contadorToolStripMenuItem2.Name = "contadorToolStripMenuItem2";
-            this.contadorToolStripMenuItem2.Size = new System.Drawing.Size(204, 24);
+            this.contadorToolStripMenuItem2.Size = new System.Drawing.Size(202, 34);
             this.contadorToolStripMenuItem2.Text = "Contador";
             this.contadorToolStripMenuItem2.Click += new System.EventHandler(this.contadorToolStripMenuItem2_Click);
             // 
@@ -424,21 +415,21 @@
             // 
             this.proveedorToolStripMenuItem2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proveedorToolStripMenuItem2.Name = "proveedorToolStripMenuItem2";
-            this.proveedorToolStripMenuItem2.Size = new System.Drawing.Size(204, 24);
+            this.proveedorToolStripMenuItem2.Size = new System.Drawing.Size(202, 34);
             this.proveedorToolStripMenuItem2.Text = "Proveedor";
             this.proveedorToolStripMenuItem2.Click += new System.EventHandler(this.proveedorToolStripMenuItem2_Click);
             // 
             // rifaToolStripMenuItem2
             // 
             this.rifaToolStripMenuItem2.Name = "rifaToolStripMenuItem2";
-            this.rifaToolStripMenuItem2.Size = new System.Drawing.Size(204, 24);
+            this.rifaToolStripMenuItem2.Size = new System.Drawing.Size(202, 34);
             this.rifaToolStripMenuItem2.Text = "Rifa";
             this.rifaToolStripMenuItem2.Click += new System.EventHandler(this.rifaToolStripMenuItem2_Click);
             // 
             // bienesToolStripMenuItem2
             // 
             this.bienesToolStripMenuItem2.Name = "bienesToolStripMenuItem2";
-            this.bienesToolStripMenuItem2.Size = new System.Drawing.Size(204, 24);
+            this.bienesToolStripMenuItem2.Size = new System.Drawing.Size(202, 34);
             this.bienesToolStripMenuItem2.Text = "Bienes";
             this.bienesToolStripMenuItem2.Click += new System.EventHandler(this.bienesToolStripMenuItem2_Click);
             // 
@@ -485,14 +476,14 @@
             this.bienesToolStripMenuItem3});
             this.verInformacionToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.verInformacionToolStripMenuItem.Name = "verInformacionToolStripMenuItem";
-            this.verInformacionToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.verInformacionToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
             this.verInformacionToolStripMenuItem.Text = "Ver informacion";
             // 
             // clienteToolStripMenuItem1
             // 
             this.clienteToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clienteToolStripMenuItem1.Name = "clienteToolStripMenuItem1";
-            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(202, 34);
             this.clienteToolStripMenuItem1.Text = "Cliente";
             this.clienteToolStripMenuItem1.Click += new System.EventHandler(this.clienteToolStripMenuItem1_Click);
             // 
@@ -500,59 +491,66 @@
             // 
             this.productoToolStripMenuItem1.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productoToolStripMenuItem1.Name = "productoToolStripMenuItem1";
-            this.productoToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.productoToolStripMenuItem1.Size = new System.Drawing.Size(202, 34);
             this.productoToolStripMenuItem1.Text = "Producto";
             // 
             // compraToolStripMenuItem2
             // 
             this.compraToolStripMenuItem2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compraToolStripMenuItem2.Name = "compraToolStripMenuItem2";
-            this.compraToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
+            this.compraToolStripMenuItem2.Size = new System.Drawing.Size(202, 34);
             this.compraToolStripMenuItem2.Text = "Compra";
             // 
             // contadorToolStripMenuItem3
             // 
             this.contadorToolStripMenuItem3.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contadorToolStripMenuItem3.Name = "contadorToolStripMenuItem3";
-            this.contadorToolStripMenuItem3.Size = new System.Drawing.Size(152, 24);
+            this.contadorToolStripMenuItem3.Size = new System.Drawing.Size(202, 34);
             this.contadorToolStripMenuItem3.Text = "Contador";
             // 
             // proveedorToolStripMenuItem3
             // 
             this.proveedorToolStripMenuItem3.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proveedorToolStripMenuItem3.Name = "proveedorToolStripMenuItem3";
-            this.proveedorToolStripMenuItem3.Size = new System.Drawing.Size(152, 24);
+            this.proveedorToolStripMenuItem3.Size = new System.Drawing.Size(202, 34);
             this.proveedorToolStripMenuItem3.Text = "Proveedor";
+            this.proveedorToolStripMenuItem3.Click += new System.EventHandler(this.proveedorToolStripMenuItem3_Click);
             // 
             // rifaToolStripMenuItem3
             // 
             this.rifaToolStripMenuItem3.Name = "rifaToolStripMenuItem3";
-            this.rifaToolStripMenuItem3.Size = new System.Drawing.Size(152, 24);
+            this.rifaToolStripMenuItem3.Size = new System.Drawing.Size(202, 34);
             this.rifaToolStripMenuItem3.Text = "Rifa";
             // 
             // bienesToolStripMenuItem3
             // 
             this.bienesToolStripMenuItem3.Name = "bienesToolStripMenuItem3";
-            this.bienesToolStripMenuItem3.Size = new System.Drawing.Size(152, 24);
+            this.bienesToolStripMenuItem3.Size = new System.Drawing.Size(202, 34);
             this.bienesToolStripMenuItem3.Text = "Bienes";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(73, 36);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // clienteRifaToolStripMenuItem
+            // 
+            this.clienteRifaToolStripMenuItem.Name = "clienteRifaToolStripMenuItem";
+            this.clienteRifaToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
+            this.clienteRifaToolStripMenuItem.Text = "Cliente - Rifa";
+            this.clienteRifaToolStripMenuItem.Click += new System.EventHandler(this.clienteRifaToolStripMenuItem_Click_1);
+            // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(882, 414);
+            this.ClientSize = new System.Drawing.Size(1323, 637);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal Mi K-fe";
@@ -608,7 +606,6 @@
         private System.Windows.Forms.ToolStripMenuItem bienesToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem rifaToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem bienesToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem clienteRifaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem divisionesPolíticasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem provinciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cantónToolStripMenuItem;
@@ -621,6 +618,7 @@
         private System.Windows.Forms.ToolStripMenuItem provinciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cantónToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem distritoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem clienteRifaToolStripMenuItem;
     }
 }
 

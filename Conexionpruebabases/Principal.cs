@@ -13,6 +13,7 @@ using Conexionpruebabases.Vistas;
 using Conexionpruebabases.Vistas.Rifas;
 using Conexionpruebabases.Vistas.Bienes;
 using Conexionpruebabases.Vistas.Contadores;
+using Conexionpruebabases.Vistas.Proveedores;
 using Conexionpruebabases.Vistas.DivisionesPoliticas;
 
 namespace Conexionpruebabases
@@ -126,9 +127,8 @@ namespace Conexionpruebabases
         private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new verCliente().Show();
-
         } 
-    
+        
         private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertProveedor().Show();
@@ -203,7 +203,7 @@ namespace Conexionpruebabases
         {
             new insertDistritos().Show();
         }
-
+        
         private void provinciaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new borrarProvincia().Show();
@@ -232,6 +232,15 @@ namespace Conexionpruebabases
         private void distritoToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             new editDistrito().Show();
+        }
+        private void proveedorToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            new selectProveedor().Show();
+        }
+
+        private void clienteRifaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            new insertClienteRifa().Show();
         }
     }
 }

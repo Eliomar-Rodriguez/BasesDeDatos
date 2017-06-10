@@ -56,7 +56,7 @@ namespace Conexionpruebabases.Vistas
         {
             try
             {
-                conn.Open();
+                
                 int cantidad = 0;
 
                 if (txtCantidad.Text.Length == 0 | txtCodProd.Text.Length == 0)
@@ -83,7 +83,7 @@ namespace Conexionpruebabases.Vistas
                         return;
                     }
                 }
-
+                conn.Open();
                 NpgsqlCommand command = new NpgsqlCommand("SELECT nombre, precio_unitario,stock from productos where codigo_producto = " + txtCodProd.Text + ";", conn);
 
                 NpgsqlDataReader dr = command.ExecuteReader();

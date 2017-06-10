@@ -68,7 +68,7 @@
             this.button1.Location = new System.Drawing.Point(1044, 633);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(209, 55);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Menú Principal";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -142,7 +142,7 @@
             this.txtTel.Mask = "0000-0000";
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(307, 40);
-            this.txtTel.TabIndex = 1;
+            this.txtTel.TabIndex = 4;
             // 
             // cmbEmpleado
             // 
@@ -151,7 +151,7 @@
             this.cmbEmpleado.Location = new System.Drawing.Point(14, 88);
             this.cmbEmpleado.Name = "cmbEmpleado";
             this.cmbEmpleado.Size = new System.Drawing.Size(307, 40);
-            this.cmbEmpleado.TabIndex = 0;
+            this.cmbEmpleado.TabIndex = 3;
             // 
             // txtFechaCompra
             // 
@@ -160,7 +160,7 @@
             this.txtFechaCompra.Location = new System.Drawing.Point(698, 88);
             this.txtFechaCompra.Name = "txtFechaCompra";
             this.txtFechaCompra.Size = new System.Drawing.Size(307, 40);
-            this.txtFechaCompra.TabIndex = 3;
+            this.txtFechaCompra.TabIndex = 5;
             // 
             // listaProductos
             // 
@@ -228,7 +228,7 @@
             this.txtCantidad.Location = new System.Drawing.Point(668, 204);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(307, 40);
-            this.txtCantidad.TabIndex = 30;
+            this.txtCantidad.TabIndex = 1;
             // 
             // label5
             // 
@@ -246,7 +246,7 @@
             this.txtCodProd.Location = new System.Drawing.Point(213, 204);
             this.txtCodProd.Name = "txtCodProd";
             this.txtCodProd.Size = new System.Drawing.Size(307, 40);
-            this.txtCodProd.TabIndex = 32;
+            this.txtCodProd.TabIndex = 0;
             // 
             // label7
             // 
@@ -264,7 +264,7 @@
             this.btnAdd.Location = new System.Drawing.Point(1029, 189);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(134, 55);
-            this.btnAdd.TabIndex = 34;
+            this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Agregar";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -275,7 +275,7 @@
             this.btnPagar.Location = new System.Drawing.Point(903, 633);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(115, 55);
-            this.btnPagar.TabIndex = 35;
+            this.btnPagar.TabIndex = 8;
             this.btnPagar.Text = "Pagar";
             this.btnPagar.UseVisualStyleBackColor = true;
             this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
@@ -321,7 +321,7 @@
             this.cmbFechaRifa.Location = new System.Drawing.Point(668, 137);
             this.cmbFechaRifa.Name = "cmbFechaRifa";
             this.cmbFechaRifa.Size = new System.Drawing.Size(307, 40);
-            this.cmbFechaRifa.TabIndex = 39;
+            this.cmbFechaRifa.TabIndex = 7;
             this.cmbFechaRifa.Visible = false;
             // 
             // label8
@@ -342,7 +342,7 @@
             this.checkBox1.Location = new System.Drawing.Point(19, 139);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(284, 36);
-            this.checkBox1.TabIndex = 42;
+            this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Agregar cliente a la rifa";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);

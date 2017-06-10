@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,10 +57,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(263, 555);
+            this.button1.Location = new System.Drawing.Point(88, 526);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(239, 55);
-            this.button1.TabIndex = 29;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Menú Principal";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -69,18 +69,18 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(87, 434);
+            this.lblError.Location = new System.Drawing.Point(8, 417);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(636, 32);
+            this.lblError.Size = new System.Drawing.Size(361, 32);
             this.lblError.TabIndex = 28;
-            this.lblError.Text = "Error: Verifique que los espacios contengan datos validos.";
+            this.lblError.Text = "Error: Ingrese al menos un dato.";
             this.lblError.Visible = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(193, 29);
+            this.label6.Location = new System.Drawing.Point(318, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(368, 49);
             this.label6.TabIndex = 27;
@@ -90,10 +90,10 @@
             // 
             this.radioM.AutoSize = true;
             this.radioM.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioM.Location = new System.Drawing.Point(491, 374);
+            this.radioM.Location = new System.Drawing.Point(275, 362);
             this.radioM.Name = "radioM";
             this.radioM.Size = new System.Drawing.Size(104, 36);
-            this.radioM.TabIndex = 26;
+            this.radioM.TabIndex = 5;
             this.radioM.TabStop = true;
             this.radioM.Text = "Mujer";
             this.radioM.UseVisualStyleBackColor = true;
@@ -102,10 +102,10 @@
             // 
             this.radioH.AutoSize = true;
             this.radioH.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioH.Location = new System.Drawing.Point(288, 374);
+            this.radioH.Location = new System.Drawing.Point(142, 362);
             this.radioH.Name = "radioH";
             this.radioH.Size = new System.Drawing.Size(127, 36);
-            this.radioH.TabIndex = 25;
+            this.radioH.TabIndex = 4;
             this.radioH.TabStop = true;
             this.radioH.Text = "Hombre";
             this.radioH.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(111, 378);
+            this.label5.Location = new System.Drawing.Point(12, 366);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 32);
             this.label5.TabIndex = 24;
@@ -123,16 +123,16 @@
             // txtApell2
             // 
             this.txtApell2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApell2.Location = new System.Drawing.Point(288, 311);
+            this.txtApell2.Location = new System.Drawing.Point(142, 299);
             this.txtApell2.Name = "txtApell2";
-            this.txtApell2.Size = new System.Drawing.Size(307, 40);
-            this.txtApell2.TabIndex = 23;
+            this.txtApell2.Size = new System.Drawing.Size(227, 40);
+            this.txtApell2.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(111, 319);
+            this.label4.Location = new System.Drawing.Point(12, 307);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 32);
             this.label4.TabIndex = 22;
@@ -141,16 +141,16 @@
             // txtApell1
             // 
             this.txtApell1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApell1.Location = new System.Drawing.Point(288, 252);
+            this.txtApell1.Location = new System.Drawing.Point(142, 240);
             this.txtApell1.Name = "txtApell1";
-            this.txtApell1.Size = new System.Drawing.Size(307, 40);
-            this.txtApell1.TabIndex = 21;
+            this.txtApell1.Size = new System.Drawing.Size(227, 40);
+            this.txtApell1.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(111, 260);
+            this.label3.Location = new System.Drawing.Point(12, 248);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 32);
             this.label3.TabIndex = 20;
@@ -159,16 +159,16 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(288, 194);
+            this.txtNombre.Location = new System.Drawing.Point(142, 182);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(307, 40);
-            this.txtNombre.TabIndex = 19;
+            this.txtNombre.Size = new System.Drawing.Size(227, 40);
+            this.txtNombre.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(111, 202);
+            this.label2.Location = new System.Drawing.Point(12, 190);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 32);
             this.label2.TabIndex = 18;
@@ -177,10 +177,10 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(298, 484);
+            this.btnGuardar.Location = new System.Drawing.Point(119, 452);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(169, 55);
-            this.btnGuardar.TabIndex = 17;
+            this.btnGuardar.TabIndex = 6;
             this.btnGuardar.Text = "Seleccionar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -189,7 +189,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(111, 139);
+            this.label1.Location = new System.Drawing.Point(12, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 32);
             this.label1.TabIndex = 16;
@@ -198,24 +198,26 @@
             // txtTel
             // 
             this.txtTel.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTel.Location = new System.Drawing.Point(288, 131);
+            this.txtTel.Location = new System.Drawing.Point(142, 119);
             this.txtTel.Mask = "0000-0000";
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(307, 40);
-            this.txtTel.TabIndex = 15;
+            this.txtTel.Size = new System.Drawing.Size(227, 40);
+            this.txtTel.TabIndex = 0;
             // 
             // vista
             // 
+            this.vista.AllowUserToDeleteRows = false;
+            this.vista.AllowUserToOrderColumns = true;
             this.vista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.vista.BackgroundColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.vista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.vista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.vista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.vista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Telefono,
@@ -223,51 +225,57 @@
             this.Apellido1,
             this.Apellido2,
             this.Genero});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.vista.DefaultCellStyle = dataGridViewCellStyle2;
-            this.vista.Location = new System.Drawing.Point(751, 65);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.vista.DefaultCellStyle = dataGridViewCellStyle4;
+            this.vista.Location = new System.Drawing.Point(385, 119);
             this.vista.Name = "vista";
+            this.vista.ReadOnly = true;
             this.vista.RowTemplate.Height = 28;
-            this.vista.Size = new System.Drawing.Size(911, 449);
+            this.vista.Size = new System.Drawing.Size(880, 449);
             this.vista.TabIndex = 30;
             // 
             // Telefono
             // 
             this.Telefono.HeaderText = "Telefono";
             this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
             // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
             // 
             // Apellido1
             // 
             this.Apellido1.HeaderText = "Apellido1";
             this.Apellido1.Name = "Apellido1";
+            this.Apellido1.ReadOnly = true;
             // 
             // Apellido2
             // 
             this.Apellido2.HeaderText = "Apellido2";
             this.Apellido2.Name = "Apellido2";
+            this.Apellido2.ReadOnly = true;
             // 
             // Genero
             // 
             this.Genero.HeaderText = "Genero";
             this.Genero.Name = "Genero";
+            this.Genero.ReadOnly = true;
             // 
             // verCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1714, 640);
+            this.ClientSize = new System.Drawing.Size(1292, 621);
             this.Controls.Add(this.vista);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblError);
@@ -285,6 +293,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTel);
             this.Name = "verCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.vista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
