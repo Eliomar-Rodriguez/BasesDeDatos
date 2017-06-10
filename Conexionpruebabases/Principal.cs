@@ -109,11 +109,7 @@ namespace Conexionpruebabases
         {
             new porcProdVendProvee().Show();
         }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> d633a821b3ba9535d5801f9aefadcd2fbad9ff5d
+        
         private void insertarVentaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertCompra().Show();
@@ -130,12 +126,9 @@ namespace Conexionpruebabases
         private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             new verCliente().Show();
-<<<<<<< HEAD
-        } 
 
-=======
-        }
->>>>>>> d633a821b3ba9535d5801f9aefadcd2fbad9ff5d
+        } 
+    
         private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertProveedor().Show();
@@ -194,7 +187,6 @@ namespace Conexionpruebabases
         private void clienteRifaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertClienteRifa().Show();
-<<<<<<< HEAD
         }
 
         private void provinciaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -210,8 +202,36 @@ namespace Conexionpruebabases
         private void distritoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new insertDistritos().Show();
-=======
->>>>>>> d633a821b3ba9535d5801f9aefadcd2fbad9ff5d
+        }
+
+        private void provinciaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new borrarProvincia().Show();
+        }
+
+        private void cantónToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new borrarCanton().Show();
+        }
+
+        private void distritoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new borrarDistrito().Show();
+        }
+
+        private void provinciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new editProvincia().Show();
+        }
+
+        private void cantónToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new editCanton().Show();
+        }
+
+        private void distritoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new editDistrito().Show();
         }
     }
 }

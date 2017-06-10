@@ -80,6 +80,42 @@
     <Compile Include="Vistas\Contadores\borrarContador.Designer.cs">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\borrarCanton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\borrarCanton.Designer.cs">
+      <DependentUpon>borrarCanton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\borrarDistrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\borrarDistrito.Designer.cs">
+      <DependentUpon>borrarDistrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\borrarProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\borrarProvincia.Designer.cs">
+      <DependentUpon>borrarProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\editCanton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\editCanton.Designer.cs">
+      <DependentUpon>editCanton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\editDistrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\editDistrito.Designer.cs">
+      <DependentUpon>editDistrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\editProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DivisionesPoliticas\editProvincia.Designer.cs">
+      <DependentUpon>editProvincia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\DivisionesPoliticas\insertCanton.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +280,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Contadores\borrarContador.resx">
       <DependentUpon>borrarContador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DivisionesPoliticas\borrarCanton.resx">
+      <DependentUpon>borrarCanton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DivisionesPoliticas\borrarDistrito.resx">
+      <DependentUpon>borrarDistrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DivisionesPoliticas\borrarProvincia.resx">
+      <DependentUpon>borrarProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DivisionesPoliticas\editCanton.resx">
+      <DependentUpon>editCanton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DivisionesPoliticas\editDistrito.resx">
+      <DependentUpon>editDistrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DivisionesPoliticas\editProvincia.resx">
+      <DependentUpon>editProvincia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\DivisionesPoliticas\insertCanton.resx">
       <DependentUpon>insertCanton.cs</DependentUpon>
