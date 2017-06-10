@@ -98,5 +98,10 @@ namespace Conexionpruebabases.Vistas.DivisionesPoliticas
             }
             catch (Exception ex) { }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

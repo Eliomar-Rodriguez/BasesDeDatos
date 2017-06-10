@@ -135,3 +135,5 @@ C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\
 C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.insertProvincia.resources
 >>>>>>> d41635716cb783e8ff368171c8574b3f6b4b28aa
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Proveedores.selectProveedor.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Empleados.insertEmpleado.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Empleados.borrarEmpleado.resources

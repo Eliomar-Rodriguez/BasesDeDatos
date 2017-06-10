@@ -15,6 +15,7 @@ using Conexionpruebabases.Vistas.Bienes;
 using Conexionpruebabases.Vistas.Contadores;
 using Conexionpruebabases.Vistas.Proveedores;
 using Conexionpruebabases.Vistas.DivisionesPoliticas;
+using Conexionpruebabases.Vistas.Empleados;
 
 namespace Conexionpruebabases
 {
@@ -241,6 +242,16 @@ namespace Conexionpruebabases
         private void clienteRifaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             new insertClienteRifa().Show();
+        }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertEmpleado().Show();
+        }
+
+        private void empleadoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new borrarEmpleado().Show();
         }
     }
 }

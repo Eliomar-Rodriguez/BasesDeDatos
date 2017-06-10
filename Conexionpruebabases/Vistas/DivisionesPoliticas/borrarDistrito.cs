@@ -67,7 +67,6 @@ namespace Conexionpruebabases.Vistas.DivisionesPoliticas
 
         private void cargarDistritos()
         {
-            MessageBox.Show(id_canton_actual);
             cbDistritos.Items.Clear();
             NpgsqlConnection conn = new NpgsqlConnection();
             conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
