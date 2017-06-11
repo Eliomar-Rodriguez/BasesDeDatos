@@ -253,5 +253,15 @@ namespace Conexionpruebabases
         {
             new borrarEmpleado().Show();
         }
+
+        private void empleadoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new editEmpleado().Show();
+        }
+
+        private void contadorToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            new verContador().Show();
+        }
     }
 }

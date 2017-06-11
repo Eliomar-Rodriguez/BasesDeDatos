@@ -137,3 +137,5 @@ C:\Users\USUARIO\Desktop\Pruebas C#\Conexionpruebabases\Conexionpruebabases\obj\
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Proveedores.selectProveedor.resources
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Empleados.insertEmpleado.resources
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Empleados.borrarEmpleado.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Empleados.editEmpleado.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.Contadores.verContador.resources

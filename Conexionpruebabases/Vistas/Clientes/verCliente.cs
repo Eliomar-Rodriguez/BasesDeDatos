@@ -88,15 +88,17 @@ namespace Conexionpruebabases.Vistas
                     //a la variable DataReader asignamos  el la variable de tipo SqlCommand
                     NpgsqlDataReader dr = command.ExecuteReader();
 
-                    bool gene = false;
+                    string gene = "";
 
                     //el ciclo while se ejecutará mientras lea registros en la tabla
                     while (dr.Read())
                     {
+                        if (bool.Parse(dr[4].ToString()))
+                            gene = "Masculino";
+                        else
+                            gene = "Femenino";
                         genero = bool.Parse(dr[4].ToString());
                         vista.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(),dr[4].ToString());
-                       
-                        /*https://blogs.msmvps.com/peplluis/2009/02/10/establecer-una-vista-maestro-detalle-entre-dos-tablas/ */
                     }
                     //cierra la conexión
                     conn.Close();

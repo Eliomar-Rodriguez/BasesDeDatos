@@ -12,21 +12,15 @@ using NpgsqlTypes;
 
 namespace Conexionpruebabases.Vistas.Empleados
 {
-    public partial class borrarEmpleado : Form
+    public partial class editEmpleado : Form
     {
         public static List<string> distritos = new List<string>();
         public static string id_distrito_actual;
         public static List<string> empleados = new List<string>();
         public static string id_empleado_actual;
-        public borrarEmpleado()
+        public editEmpleado()
         {
             InitializeComponent();
-        }
-
-        private void borrarEmpleado_Load(object sender, EventArgs e)
-        {
-            cargarDistritos();
-            cargarEmpleados();
         }
 
         private void cargarDistritos()
@@ -69,6 +63,12 @@ namespace Conexionpruebabases.Vistas.Empleados
                 cbEmpleados.Items.AddRange(new object[] { n });
             }
             conn.Close();
+        }
+
+        private void editEmpleado_Load(object sender, EventArgs e)
+        {
+            cargarDistritos();
+            cargarEmpleados();
         }
 
         private void cbDistritos_SelectedIndexChanged(object sender, EventArgs e)
@@ -144,7 +144,7 @@ namespace Conexionpruebabases.Vistas.Empleados
                     txtNombre.Text = dr[6].ToString();
                     txtApellido1.Text = dr[7].ToString();
                     txtApellido2.Text = dr[8].ToString();
-                    
+
                 }
                 if (dr.FieldCount == 0)
                 {
@@ -159,16 +159,27 @@ namespace Conexionpruebabases.Vistas.Empleados
             }
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (cbEmpleados.SelectedIndex == -1)
+            // si hay espacios vacios
+            if (txtTelefono.Text.Length != 9 | txtCedula.Text.Length != 11 | dtpFechaNacimiento.Value == null | txtNombre.Text.Length == 0 | txtApellido1.Text.Length == 0 | txtApellido2.Text.Length == 0 | (!radioH.Checked & !radioM.Checked) | cbDistritos.SelectedIndex == -1 | txtDirExacta.Text.Length == 0)
             {
-                lblError.ForeColor = Color.Red;
                 lblError.Visible = true;
+                lblError.ForeColor = Color.Red;
             }
             else // si todo esta bien procede a insertar el cliente
             {
-                char[] telefono = txtTelefono.Text.ToCharArray();
+                string nuevoTelefono = txtTelefono.Text, cedula = txtCedula.Text, dirExacta = txtDirExacta.Text, telefono = id_empleado_actual;
+                char[] nombre = txtNombre.Text.ToCharArray(), apellido1 = txtApellido1.Text.ToCharArray(), apellido2 = txtApellido2.Text.ToCharArray();
+                DateTime fechaNacimiento = dtpFechaNacimiento.Value;
+                int idDistrito = int.Parse(id_distrito_actual);
+                bool genero = true;
+
+                if (radioM.Checked)
+                    genero = false;
+                else if (radioH.Checked)
+                    genero = true;
+
                 try
                 {
                     NpgsqlConnection conn = new NpgsqlConnection();
@@ -176,16 +187,53 @@ namespace Conexionpruebabases.Vistas.Empleados
 
                     conn.Open();
 
-                    NpgsqlCommand command = new NpgsqlCommand("borrar_empleado", conn);
+                    NpgsqlCommand command = new NpgsqlCommand("modificar_empleado", conn);
                     command.CommandType = CommandType.StoredProcedure;
 
-                    NpgsqlParameter tel = new NpgsqlParameter("@telefono", NpgsqlDbType.Char,11);
+                    // creacion de variables que se enviaran por parametro en la consulta
+                    NpgsqlParameter tel = new NpgsqlParameter("@telefono", NpgsqlDbType.Char, 9);
                     tel.Value = telefono;
                     command.Parameters.Add(tel);
 
+                    NpgsqlParameter nTel = new NpgsqlParameter("@telefono", NpgsqlDbType.Char, 9);
+                    nTel.Value = nuevoTelefono;
+                    command.Parameters.Add(nTel);
+
+                    NpgsqlParameter ced = new NpgsqlParameter("@cedula", NpgsqlDbType.Char, 11);
+                    ced.Value = cedula;
+                    command.Parameters.Add(ced);
+
+                    NpgsqlParameter idD = new NpgsqlParameter("@id_distrito", NpgsqlDbType.Integer);
+                    idD.Value = idDistrito;
+                    command.Parameters.Add(idD);
+
+                    NpgsqlParameter dir = new NpgsqlParameter("@dir_exacta", NpgsqlDbType.Varchar, 250);
+                    dir.Value = dirExacta;
+                    command.Parameters.Add(dir);
+
+                    NpgsqlParameter fe = new NpgsqlParameter("@fecha_nacimiento", NpgsqlDbType.Date);
+                    fe.Value = fechaNacimiento;
+                    command.Parameters.Add(fe);
+
+                    NpgsqlParameter ge = new NpgsqlParameter("@genero", NpgsqlDbType.Boolean);
+                    ge.Value = genero;
+                    command.Parameters.Add(ge);
+
+                    NpgsqlParameter name = new NpgsqlParameter("@nombre", NpgsqlDbType.Varchar, 50);
+                    name.Value = nombre;
+                    command.Parameters.Add(name);
+
+                    NpgsqlParameter apell1 = new NpgsqlParameter("@apellido1", NpgsqlDbType.Varchar, 50);
+                    apell1.Value = apellido1;
+                    command.Parameters.Add(apell1);
+
+                    NpgsqlParameter apell2 = new NpgsqlParameter("@apellido2", NpgsqlDbType.Varchar, 50);
+                    apell2.Value = apellido2;
+                    command.Parameters.Add(apell2);
+                                        
                     command.ExecuteReader();
 
-                    lblError.Text = "Listo! el empleado ha sido eliminado";
+                    lblError.Text = "Listo! el empleado ha sido actualizado";
                     lblError.ForeColor = Color.Green;
                     lblError.Visible = true;
 
@@ -196,25 +244,20 @@ namespace Conexionpruebabases.Vistas.Empleados
                     txtApellido2.Clear();
                     txtDirExacta.Clear();
                     cbDistritos.SelectedIndex = -1;
+                    cbEmpleados.SelectedIndex = -1;
                     radioH.Checked = false;
                     radioM.Checked = false;
                     dtpFechaNacimiento.Value = DateTime.Now;
-                    cbEmpleados.SelectedIndex = -1;
-                    cargarEmpleados();
 
                     conn.Close();
+                    cargarEmpleados();
                 }
                 catch (Exception ex)
                 {
                     lblError.Visible = true;
-                    lblError.Text = ex.ToString(); ;
+                    lblError.Text = ex.ToString();
                 }
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Dispose();
         }
     }
 }

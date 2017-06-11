@@ -80,6 +80,12 @@
     <Compile Include="Vistas\Contadores\borrarContador.Designer.cs">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Contadores\verContador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Contadores\verContador.Designer.cs">
+      <DependentUpon>verContador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\DivisionesPoliticas\borrarCanton.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,12 @@
     </Compile>
     <Compile Include="Vistas\Empleados\borrarEmpleado.Designer.cs">
       <DependentUpon>borrarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Empleados\editEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Empleados\editEmpleado.Designer.cs">
+      <DependentUpon>editEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Empleados\insertEmpleado.cs">
       <SubType>Form</SubType>
@@ -299,6 +311,9 @@
     <EmbeddedResource Include="Vistas\Contadores\borrarContador.resx">
       <DependentUpon>borrarContador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Contadores\verContador.resx">
+      <DependentUpon>verContador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\DivisionesPoliticas\borrarCanton.resx">
       <DependentUpon>borrarCanton.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Empleados\borrarEmpleado.resx">
       <DependentUpon>borrarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Empleados\editEmpleado.resx">
+      <DependentUpon>editEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Empleados\insertEmpleado.resx">
       <DependentUpon>insertEmpleado.cs</DependentUpon>
