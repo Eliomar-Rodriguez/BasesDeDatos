@@ -10,44 +10,17 @@ using System.Windows.Forms;
 using Npgsql;
 using NpgsqlTypes;
 
-namespace Conexionpruebabases.Vistas.Rifas
+namespace Conexionpruebabases.Vistas
 {
-    public partial class insertClienteRifa : Form
+    public partial class insertProductoRifa : Form
     {
-        public static List<string> clientes = new List<string>();
+        public static List<string> productos = new List<string>();
         public static List<string> rifas = new List<string>();
-        public static string telefono_cliente_actual;
+        public static string id_producto_actual;
         public static string id_rifa_actual;
-        public insertClienteRifa()
+        public insertProductoRifa()
         {
             InitializeComponent();
-        }
-
-        private void insertClienteRifa_Load(object sender, EventArgs e)
-        {
-            cargarClientes();
-            cargarRifas();
-        }
-
-        private void cargarClientes()
-        {
-            cbClientes.Items.Clear();
-            NpgsqlConnection conn = new NpgsqlConnection();
-            conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
-
-            conn.Open();
-
-            NpgsqlCommand command = new NpgsqlCommand("SELECT telefono,nombre, apellido1,apellido2 from clientes;", conn);
-
-            NpgsqlDataReader dr = command.ExecuteReader();
-
-            while (dr.Read())
-            {
-                string n = dr[1].ToString() + " " + dr[2].ToString() + " " + dr[3].ToString();
-                clientes.Add(dr[0].ToString());
-                cbClientes.Items.AddRange(new object[] { n });
-            }
-            conn.Close();
         }
 
         private void cargarRifas()
@@ -70,22 +43,24 @@ namespace Conexionpruebabases.Vistas.Rifas
             conn.Close();
         }
 
-        private void cbClientes_SelectedIndexChanged(object sender, EventArgs e)
+        private void cargarProductos()
         {
-            try
-            {
-                telefono_cliente_actual = clientes[cbClientes.SelectedIndex];
-            }
-            catch (Exception ex) { }
-        }
+            cbProductos.Items.Clear();
+            NpgsqlConnection conn = new NpgsqlConnection();
+            conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
 
-        private void cbRifas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
+            conn.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand("SELECT codigo_producto,nombre from productos;", conn);
+
+            NpgsqlDataReader dr = command.ExecuteReader();
+
+            while (dr.Read())
             {
-                id_rifa_actual = rifas[cbRifas.SelectedIndex];
+                productos.Add(dr[0].ToString());
+                cbProductos.Items.AddRange(new object[] { dr[1].ToString() });
             }
-            catch (Exception ex) { }
+            conn.Close();
         }
 
         private void btBuscar_Click(object sender, EventArgs e)
@@ -97,13 +72,13 @@ namespace Conexionpruebabases.Vistas.Rifas
 
                 conn.Open();
 
-                NpgsqlCommand command = new NpgsqlCommand("SELECT telefono,nombre from clientes where telefono='" + telefono_cliente_actual + "';", conn);
+                NpgsqlCommand command = new NpgsqlCommand("SELECT nombre,precio_unitario from productos where codigo_producto='" + id_producto_actual + "';", conn);
 
                 NpgsqlDataReader dr = command.ExecuteReader();
                 while (dr.Read())
                 {
-                    txtTel.Text = dr[0].ToString();
-                    txtNombre.Text = dr[1].ToString();
+                    txtNombre.Text = dr[0].ToString();
+                    txtPrecio.Text = dr[1].ToString();
                 }
                 if (dr.FieldCount == 0)
                 {
@@ -137,9 +112,33 @@ namespace Conexionpruebabases.Vistas.Rifas
             }
         }
 
+        private void insertProductoRifa_Load(object sender, EventArgs e)
+        {
+            cargarProductos();
+            cargarRifas();
+        }
+
+        private void cbProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                id_producto_actual = productos[cbProductos.SelectedIndex];
+            }
+            catch (Exception ex) { }
+        }
+
+        private void cbRifas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                id_rifa_actual = rifas[cbRifas.SelectedIndex];
+            }
+            catch (Exception ex) { }
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Length == 0 | txtTel.Text.Length == 0 | dtpFecha.Value == null | txtDescripcion.Text.Length == 0)
+            if (txtNombre.Text.Length == 0 | txtPrecio.Text.Length == 0 | dtpFecha.Value == null | txtDescripcion.Text.Length == 0)
             {
                 lblError.Visible = true;
             }
@@ -147,7 +146,8 @@ namespace Conexionpruebabases.Vistas.Rifas
             {
                 DateTime fecha = dtpFecha.Value;
                 string descripcion = txtDescripcion.Text;
-                char[] nombre = txtNombre.Text.ToCharArray(), telefono = txtTel.Text.ToCharArray();
+                char[] nombre = txtNombre.Text.ToCharArray();
+                int precio = int.Parse(txtPrecio.Text);
 
                 try
                 {
@@ -156,36 +156,30 @@ namespace Conexionpruebabases.Vistas.Rifas
 
                     conn.Open();
 
-                    NpgsqlCommand command = new NpgsqlCommand("insertar_cliente_rifas", conn);
+                    NpgsqlCommand command = new NpgsqlCommand("insertar_productos_rifas", conn);
                     command.CommandType = CommandType.StoredProcedure;
 
                     // creacion de variables que se enviaran por parametro en la consulta
-                    NpgsqlParameter tel = new NpgsqlParameter("@telefono_cliente", NpgsqlDbType.Char, 9);
-                    tel.Value = telefono;
-                    command.Parameters.Add(tel);
-
                     NpgsqlParameter idR = new NpgsqlParameter("@id_rifa", NpgsqlDbType.Integer);
                     idR.Value = id_rifa_actual;
                     command.Parameters.Add(idR);
 
-                    NpgsqlParameter gan = new NpgsqlParameter("@ganador", NpgsqlDbType.Boolean);
-                    gan.Value = false;
-                    command.Parameters.Add(gan);
-
+                    NpgsqlParameter cp = new NpgsqlParameter("@codigo_producto", NpgsqlDbType.Integer);
+                    cp.Value = int.Parse(id_producto_actual);
+                    command.Parameters.Add(cp);
 
                     command.ExecuteReader();
 
-                    lblError.Text = "Listo! el Cliente agregado a la rifa";
+                    lblError.Text = "Listo! el prodcto se ha agregado a la rifa";
                     lblError.ForeColor = Color.Green;
                     lblError.Visible = true;
 
-                    txtTel.Clear();
+                    txtPrecio.Clear();
                     txtNombre.Clear();
                     dtpFecha.Value = DateTime.Now;
                     txtDescripcion.Clear();
-                    cbClientes.SelectedIndex = -1;
                     cbRifas.SelectedIndex = -1;
-
+                    cbProductos.SelectedIndex = -1;
 
                     conn.Close();
                 }

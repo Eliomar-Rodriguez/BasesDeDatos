@@ -278,5 +278,15 @@ namespace Conexionpruebabases
         {
             new verDistrito().Show();
         }
+
+        private void productoRifaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertProductoRifa().Show();
+        }
+
+        private void teléfonoProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new insertTelefonoProveedor().Show();
+        }
     }
 }

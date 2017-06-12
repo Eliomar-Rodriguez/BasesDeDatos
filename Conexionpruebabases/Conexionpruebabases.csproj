@@ -176,6 +176,18 @@
     <Compile Include="Vistas\Empleados\insertEmpleado.Designer.cs">
       <DependentUpon>insertEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\insertProductoRifa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\insertProductoRifa.Designer.cs">
+      <DependentUpon>insertProductoRifa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\insertTelefonoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\insertTelefonoProveedor.Designer.cs">
+      <DependentUpon>insertTelefonoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Proveedores\borrarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -376,6 +388,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Empleados\insertEmpleado.resx">
       <DependentUpon>insertEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\insertProductoRifa.resx">
+      <DependentUpon>insertProductoRifa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\insertTelefonoProveedor.resx">
+      <DependentUpon>insertTelefonoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Proveedores\borrarProveedor.resx">
       <DependentUpon>borrarProveedor.cs</DependentUpon>
