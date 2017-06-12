@@ -60,11 +60,13 @@ namespace Conexionpruebabases.Vistas
             NpgsqlCommand command = new NpgsqlCommand("SELECT cedula_juridica,nombre from proveedores;", conn);
 
             NpgsqlDataReader dr = command.ExecuteReader();
-
+            string n;
             while (dr.Read())
             {
                 proveedores.Add(dr[0].ToString());
-                cbCedulaJuridica.Items.AddRange(new object[] { dr[1].ToString() });
+                n = dr[1].ToString() + " " + dr[2].ToString() + " " + dr[3].ToString();
+                cbCedulaJuridica.Items.AddRange(new object[] { n });
+                n = "";
             }
             conn.Close();
         }

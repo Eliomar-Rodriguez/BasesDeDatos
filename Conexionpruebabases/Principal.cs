@@ -288,5 +288,20 @@ namespace Conexionpruebabases
         {
             new insertTelefonoProveedor().Show();
         }
+
+        private void teléfonosProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new borrarTelefonoProveedor().Show();
+        }
+
+        private void teléfonoProveedorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new editTelefonoProveedor().Show();
+        }
+
+        private void teléfonosProveedoresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new verTelefonosProveedores().Show();
+        }
     }
 }

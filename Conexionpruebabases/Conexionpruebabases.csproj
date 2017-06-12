@@ -68,6 +68,12 @@
     <Compile Include="Vistas\Bienes\borrarBienes.Designer.cs">
       <DependentUpon>borrarBienes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\borrarTelefonoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\borrarTelefonoProveedor.Designer.cs">
+      <DependentUpon>borrarTelefonoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Clientes\borrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,12 @@
     </Compile>
     <Compile Include="Vistas\DivisionesPoliticas\verProvincia.Designer.cs">
       <DependentUpon>verProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\editTelefonoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\editTelefonoProveedor.Designer.cs">
+      <DependentUpon>editTelefonoProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Empleados\borrarEmpleado.cs">
       <SubType>Form</SubType>
@@ -320,6 +332,12 @@
     <Compile Include="Vistas\Tipos - Productos\modificar_tipo.designer.cs">
       <DependentUpon>modificar_tipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\verTelefonosProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\verTelefonosProveedores.Designer.cs">
+      <DependentUpon>verTelefonosProveedores.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +352,9 @@
     </Compile>
     <EmbeddedResource Include="Vistas\Bienes\borrarBienes.resx">
       <DependentUpon>borrarBienes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\borrarTelefonoProveedor.resx">
+      <DependentUpon>borrarTelefonoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Clientes\borrarCliente.resx">
       <DependentUpon>borrarCliente.cs</DependentUpon>
@@ -379,6 +400,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\DivisionesPoliticas\verProvincia.resx">
       <DependentUpon>verProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\editTelefonoProveedor.resx">
+      <DependentUpon>editTelefonoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Empleados\borrarEmpleado.resx">
       <DependentUpon>borrarEmpleado.cs</DependentUpon>
@@ -460,6 +484,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Tipos - Productos\modificar_tipo.resx">
       <DependentUpon>modificar_tipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\verTelefonosProveedores.resx">
+      <DependentUpon>verTelefonosProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />

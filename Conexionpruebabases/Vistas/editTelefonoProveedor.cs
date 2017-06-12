@@ -12,13 +12,34 @@ using NpgsqlTypes;
 
 namespace Conexionpruebabases.Vistas
 {
-    public partial class insertTelefonoProveedor : Form
+    public partial class editTelefonoProveedor : Form
     {
         public static List<string> proveedores = new List<string>();
-        public static string id_proveedor_actual;
-        public insertTelefonoProveedor()
+        public static string cedula_juridica_actual;
+        public static List<string> telefonos = new List<string>();
+        public static string telefono_actual;
+        public editTelefonoProveedor()
         {
             InitializeComponent();
+        }
+
+        private void cargarTelefonos()
+        {
+            cbTelefonos.Items.Clear();
+            NpgsqlConnection conn = new NpgsqlConnection();
+            conn.ConnectionString = "Server=localhost;Database=proyectoBases;Port=5432;User Id=postgres;Password=12345;";
+
+            conn.Open();
+            NpgsqlCommand command = new NpgsqlCommand("SELECT telefono from telefonos_proveedores where cedula_juridica = '" + cedula_juridica_actual + "';", conn);
+
+            NpgsqlDataReader dr = command.ExecuteReader();
+
+            while (dr.Read())
+            {
+                telefonos.Add(dr[0].ToString());
+                cbTelefonos.Items.AddRange(new object[] { dr[0].ToString() });
+            }
+            conn.Close();
         }
 
         private void cargarProveedores()
@@ -43,9 +64,28 @@ namespace Conexionpruebabases.Vistas
             conn.Close();
         }
 
-        private void insertTelefonoProveedor_Load(object sender, EventArgs e)
+        private void editTelefonoProveedor_Load(object sender, EventArgs e)
         {
             cargarProveedores();
+        }
+
+        private void cbProveedores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                cedula_juridica_actual = proveedores[cbProveedores.SelectedIndex];
+                cargarTelefonos();
+            }
+            catch (Exception ex) { }
+        }
+
+        private void cbTelefonos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                telefono_actual = telefonos[cbTelefonos.SelectedIndex];
+            }
+            catch (Exception ex) { }
         }
 
         private void btBuscar_Click(object sender, EventArgs e)
@@ -57,12 +97,12 @@ namespace Conexionpruebabases.Vistas
 
                 conn.Open();
 
-                NpgsqlCommand command = new NpgsqlCommand("SELECT nombre, apellido1,apellido2 from proveedores where cedula_juridica='" + id_proveedor_actual + "';", conn);
+                NpgsqlCommand command = new NpgsqlCommand("SELECT nombre, apellido1,apellido2 from proveedores where cedula_juridica='" + cedula_juridica_actual + "';", conn);
 
                 NpgsqlDataReader dr = command.ExecuteReader();
                 string n;
                 while (dr.Read())
-                {                    
+                {
                     n = dr[0].ToString() + " " + dr[1].ToString() + " " + dr[2].ToString();
                     txtNombre.Text = n;
                 }
@@ -71,6 +111,10 @@ namespace Conexionpruebabases.Vistas
                     lblError.Visible = true;
                 }
                 conn.Close();
+                /////////////////////////////////////////////////////////
+
+                txtTel.Text = telefono_actual;
+
             }
             catch (Exception ex)
             {
@@ -79,24 +123,15 @@ namespace Conexionpruebabases.Vistas
             }
         }
 
-        private void cbProveedores_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                id_proveedor_actual = proveedores[cbProveedores.SelectedIndex];
-            }
-            catch (Exception ex) { }
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Length == 0 | txtTel.Text.Length == 0 )
+            if (txtNombre.Text.Length == 0 | txtTel.Text.Length == 0 | txtNuevoTelefono.Text.Length == 0)
             {
                 lblError.Visible = true;
             }
             else // si todo esta bien procede a insertar el cliente
             {
-                char[] nombre = txtNombre.Text.ToCharArray(), telefono = txtTel.Text.ToCharArray();
+                char[] nombre = txtNombre.Text.ToCharArray(), telefono = txtTel.Text.ToCharArray(), nuevoTelefono = txtNuevoTelefono.Text.ToCharArray();
 
                 try
                 {
@@ -105,43 +140,46 @@ namespace Conexionpruebabases.Vistas
 
                     conn.Open();
 
-                    NpgsqlCommand command = new NpgsqlCommand("insertar_telefonos_proveedores", conn);
+                    NpgsqlCommand command = new NpgsqlCommand("modificar_telefonos_proveedores", conn);
                     command.CommandType = CommandType.StoredProcedure;
 
                     // creacion de variables que se enviaran por parametro en la consulta
 
-                    NpgsqlParameter ced = new NpgsqlParameter("@cedula_juridica", NpgsqlDbType.Char,12);
-                    ced.Value = id_proveedor_actual.ToCharArray();
+                    NpgsqlParameter ced = new NpgsqlParameter("@cedula_juridica", NpgsqlDbType.Char, 12);
+                    ced.Value = cedula_juridica_actual.ToCharArray();
                     command.Parameters.Add(ced);
 
                     NpgsqlParameter tel = new NpgsqlParameter("@telefono_proveedor", NpgsqlDbType.Char, 9);
                     tel.Value = telefono;
                     command.Parameters.Add(tel);
 
-                   
+                    NpgsqlParameter teln = new NpgsqlParameter("@nuevo_telefono_proveedor", NpgsqlDbType.Char, 9);
+                    teln.Value = nuevoTelefono;
+                    command.Parameters.Add(teln);
+
+
                     command.ExecuteReader();
 
-                    lblError.Text = "Listo! el telefono agregado para el proveedor";
+                    lblError.Text = "Listo! el telefono se ha modificado";
                     lblError.ForeColor = Color.Green;
                     lblError.Visible = true;
 
                     txtTel.Clear();
                     txtNombre.Clear();
+                    txtNuevoTelefono.Clear();
                     cbProveedores.SelectedIndex = -1;
-                    cargarProveedores();
+                    cbTelefonos.SelectedIndex = -1;
+
                     conn.Close();
                 }
                 catch (Exception ex)
                 {
                     lblError.Visible = true;
-                    lblError.Text = ex.ToString(); ;
+                    lblError.Text = ex.ToString();
                 }
+                cargarProveedores();
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Dispose();
-        }
     }
+    
 }

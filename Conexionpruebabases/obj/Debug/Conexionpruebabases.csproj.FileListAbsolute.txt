@@ -144,3 +144,6 @@ A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.D
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.DivisionesPoliticas.verDistrito.resources
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertProductoRifa.resources
 A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.insertTelefonoProveedor.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.borrarTelefonoProveedor.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.editTelefonoProveedor.resources
+A:\TEC\Bases\Proyecto\Conexionpruebabases\obj\Debug\Conexionpruebabases.Vistas.verTelefonosProveedores.resources
