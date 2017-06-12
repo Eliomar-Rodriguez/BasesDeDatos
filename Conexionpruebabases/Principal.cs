@@ -263,5 +263,20 @@ namespace Conexionpruebabases
         {
             new verContador().Show();
         }
+
+        private void provinciaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new verProvincia().Show();
+        }
+
+        private void cantónToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            new verCanton().Show();
+        }
+
+        private void distritoToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            new verDistrito().Show();
+        }
     }
 }
